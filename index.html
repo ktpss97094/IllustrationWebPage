@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title> Document </title>
-    </head>
+<html lang="ja">
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>專題</title>
 
-    </body>
+    <!--重要的CSS-->
+    <link href="https://s.pximg.net/touch/special/drawfest2/css/style.css" rel="stylesheet" type="text/css">
+
+    <!--有關滑鼠滾動-->
+    <script type="text/javascript">
+        window.addEventListener('load', (e) => {
+            const uri = new URL(window.location.href);
+            history.replaceState('', '', uri.pathname);
+        });
+
+        window.addEventListener('scroll', (e) => {
+            const lastKnownScrollPosition = window.scrollY;
+            const topThreshold = 150;
+            const bottomThreshold = document.documentElement.scrollHeight - document.documentElement.clientHeight - 100;
+
+            if (lastKnownScrollPosition > topThreshold) {
+                if (lastKnownScrollPosition > bottomThreshold) {
+                    //網頁最下的漸變
+                    document.querySelector('.main-visual').classList.remove('line');
+                    return;
+                }
+
+                //全部的漸變
+                document.querySelector('.main-visual').classList.add('line');
+            } else {
+                //往下滑後往上滑回最上漸變
+                document.querySelector('.main-visual').classList.remove('line');
+            }
+        });
+    </script>
+
+    <!--側邊欄CSS-->
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <nav class="header_nav">
+        <div class="header_nav_wrap">
+            <ul class="header_nav_list">
+                <li class="current"><a href="#top">TOP</a></li>
+                <li><a href="#webradio">PROFILE</a></li>
+                <li><a href="#corner">GALLERY</a></li>
+                <li><a href="#form">PRODUCT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="main">
+            <!--main-visual:一開始的背景 / main-visual-line:往下滑修改的背景-->
+            <div class="main-visual"><img class="main-visual-color" src="home_bg.png"><img class="main-visual-line" src="profile_bg.png"></div>
+            <div class="main-content">
+
+                <div id="apply"></div>
+                <div class="main-content-subject">
+                    <h2 id="background-color-point">APPLICATION</h2>
+                    <p>You don't need pre-registration for Drawfest 2, but we will provide <a href="#gifts">gorgeous
+                            gifts for applicants</a>!</p>
+                    <p>The application requires pixiv ID.</p>
+                    <div class="main-content-subject-footer-ui-button">
+                        <div class="footer-ui-button">
+                            Application Closed
+                        </div>
+                    </div>
+                    <h2>EVENT HASHTAG</h2>
+                    <div class="footer-event-hashtag">
+                        <a href="https://twitter.com/search?q=%23Drawfest2" rel="noopener" target="_blank">#Drawfest2</a>
+                    </div>
+                    <h2>CONTACT INFORMATION</h2>
+                    <div class="footer-contacts">
+                        <p class="footer-contact">For Applicants: <a href="https://www.pixiv.net/support?mode=inquiry&type=25&service=pixiv&subject=drawfest%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&ref=faq" rel="noopener" target="_blank">Click Here</a></p>
+                        <p class="footer-contact">For Media: ba@ml.pixiv.co.jp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
 </html>
