@@ -1095,7 +1095,10 @@ body {
         z-index: 5;
         width: 0;
         height: 100%;
-        background: #40322c;
+
+        /*nav收縮方塊顏色*/
+        background: #5783bb;
+        
         transition: all .35s cubic-bezier(.39, .575, .565, 1);
         -webkit-transition: all .35s cubic-bezier(.39, .575, .565, 1);
         -moz-transition: all .35s cubic-bezier(.39, .575, .565, 1);
