@@ -132,22 +132,41 @@ div.header-ui-button {
 }
 
 .main-visual img.main-visual-color {
-    display: block;
+    display: block;  /*以區塊的方式顯示*/
 }
 
-.main-visual.line img.main-visual-color {
-    opacity: 0.0;
-}
+/*改背景 begin/////////////////////////////////////////////////*/
 
-.main-visual img.main-visual-line {
+img.main-visual-profile {
     display: block;
     margin-top: calc(-100vh);
     opacity: 0.0;
 }
 
-.main-visual.line img.main-visual-line {
+.main-visual.profile img.main-visual-profile {
     opacity: 1.0;
 }
+
+.main-visual img.main-visual-gallery {
+    display: block;
+    margin-top: calc(-100vh);
+    opacity: 0.0;
+}
+
+.main-visual.gallery img.main-visual-gallery {
+    opacity: 1.0;
+}
+
+.main-visual img.main-visual-product {
+    display: block;
+    margin-top: calc(-100vh);
+    opacity: 0.0;
+}
+
+.main-visual.product img.main-visual-product {
+    opacity: 1.0;
+}
+/*改背景 end/////////////////////////////////////////////////*/
 
 .main-visual::after {
     content: '';
