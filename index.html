@@ -17,21 +17,33 @@
 
         window.addEventListener('scroll', (e) => {
             const lastKnownScrollPosition = window.scrollY;
-            const topThreshold = 150;
-            const bottomThreshold = document.documentElement.scrollHeight - document.documentElement.clientHeight - 100;
+            const top_to_profile_Threshold = (document.documentElement.scrollHeight - document.documentElement.clientHeight)*(1/4);  //原:150
+            const profile_to_gallery_Threshold =  (document.documentElement.scrollHeight - document.documentElement.clientHeight)*(2/4);
+            const gallery_to_product_Threshold = (document.documentElement.scrollHeight - document.documentElement.clientHeight)*(3/4);
 
-            if (lastKnownScrollPosition > topThreshold) {
-                if (lastKnownScrollPosition > bottomThreshold) {
-                    //網頁最下的漸變
-                    document.querySelector('.main-visual').classList.remove('line');
-                    return;
-                }
-
-                //全部的漸變
-                document.querySelector('.main-visual').classList.add('line');
-            } else {
-                //往下滑後往上滑回最上漸變
-                document.querySelector('.main-visual').classList.remove('line');
+            if(lastKnownScrollPosition<top_to_profile_Threshold)
+            {
+                document.querySelector('.main-visual').classList.remove('profile');
+                document.querySelector('.main-visual').classList.remove('gallery');
+                document.querySelector('.main-visual').classList.remove('product');
+            }
+            else if(top_to_profile_Threshold<lastKnownScrollPosition&&lastKnownScrollPosition<profile_to_gallery_Threshold)
+            {
+                document.querySelector('.main-visual').classList.remove('gallery');
+                document.querySelector('.main-visual').classList.add('profile');
+                document.querySelector('.main-visual').classList.remove('product');
+            }
+            else if(profile_to_gallery_Threshold<lastKnownScrollPosition&&lastKnownScrollPosition<gallery_to_product_Threshold)
+            {
+                document.querySelector('.main-visual').classList.remove('profile');
+                document.querySelector('.main-visual').classList.add('gallery');
+                document.querySelector('.main-visual').classList.remove('product');
+            }
+            else if(gallery_to_product_Threshold<lastKnownScrollPosition)
+            {
+                document.querySelector('.main-visual').classList.remove('profile');
+                document.querySelector('.main-visual').classList.remove('gallery');
+                document.querySelector('.main-visual').classList.add('product');
             }
         });
     </script>
@@ -45,9 +57,9 @@
         <div class="header_nav_wrap">
             <ul class="header_nav_list">
                 <li class="current"><a href="#top">TOP</a></li>
-                <li><a href="#webradio">PROFILE</a></li>
-                <li><a href="#corner">GALLERY</a></li>
-                <li><a href="#form">PRODUCT</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#product">PRODUCT</a></li>
             </ul>
         </div>
     </nav>
@@ -55,29 +67,21 @@
     <div class="wrapper">
         <div class="main">
             <!--main-visual:一開始的背景 / main-visual-line:往下滑修改的背景-->
-            <div class="main-visual"><img class="main-visual-color" src="home_bg.png"><img class="main-visual-line" src="profile_bg.png"></div>
-            <div class="main-content">
+            <div class="main-visual">
+                <img class="main-visual-color" src="top_bg.png">
 
-                <div id="apply"></div>
+                <div class="main-visual-profile">
+                <img src="profile_bg.png">
+                </div>
+
+                <img class="main-visual-gallery" src="gallery_bg.png">
+                <img class="main-visual-product" src="product_bg.png">
+            </div>
+            <div class="main-content">
                 <div class="main-content-subject">
-                    <h2 id="background-color-point">APPLICATION</h2>
-                    <p> </p>
-                    <p>The application requires pixiv ID.</p>
-                    <div class="main-content-subject-footer-ui-button">
-                        <div class="footer-ui-button">
-                            Application Closed
-                        </div>
-                    </div>
-                    <h2>EVENT HASHTAG</h2>
-                    <div class="footer-event-hashtag">
-                        <a href="https://twitter.com/search?q=%23Drawfest2" rel="noopener" target="_blank">#Drawfest2</a>
-                    </div>
-                    <h2>CONTACT INFORMATION</h2>
-                    <div class="footer-contacts">
-                        <p class="footer-contact">For Applicants: <a href="https://www.pixiv.net/support?mode=inquiry&type=25&service=pixiv&subject=drawfest%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&ref=faq" rel="noopener" target="_blank">Click Here</a></p>
-                        <p class="footer-contact">For Media: ba@ml.pixiv.co.jp</p>
-                    </div>
-                </div>>
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <!-- <div class="main-content-subject-test" id="profile" style="position: fixed; top: 20px;"><h2>EVENT HASHTAG</h2></div> -->
+                </div>
             </div>
         </div>
 

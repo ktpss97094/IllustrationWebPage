@@ -360,6 +360,7 @@ body {
     top: 100px;
     font-family: YakuHanJPs, "Fjalla One", "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
     letter-spacing: .06em;
+    font-size: large;
 }
 
 .header_nav_list li a {
@@ -1082,7 +1083,7 @@ body {
     .header_nav_list li {
         width: 100%;
         margin-bottom: 10px;
-        font-size: 16px;
+        font-size: 25px;
         text-align: left;
     }
 
@@ -1111,7 +1112,6 @@ body {
 
         /*左側導覽欄位文字初始顏色*/
         color: white;
-
         transition: all .35s cubic-bezier(.39, .575, .565, 1);
         -webkit-transition: all .35s cubic-bezier(.39, .575, .565, 1);
         -moz-transition: all .35s cubic-bezier(.39, .575, .565, 1);
@@ -1133,10 +1133,6 @@ body {
 
     .header_nav_list li.current a {
         color: #fff;
-    }
-
-    .header_nav_share {
-        display: none;
     }
 
     .main {
@@ -1628,16 +1624,5 @@ body {
 
     .modal_item {
         width: 800px;
-    }
-}
-
-@media only screen and (max-width:750px) {
-    .contents.thanks .contents_frame {
-        margin-top: 18vw;
-        padding: 6vw 10.5vw;
-    }
-
-    .contents.thanks .contents_cap {
-        margin-bottom: 10vw;
     }
 }
