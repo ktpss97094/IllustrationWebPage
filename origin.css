@@ -132,15 +132,12 @@ div.header-ui-button {
 }
 
 .main-visual img.main-visual-color {
-    display: block;
+    display: block;  /*以區塊的方式顯示*/
 }
 
 /*改背景 begin/////////////////////////////////////////////////*/
-.main-visual.profile img.main-visual-color {
-    opacity: 0.0;
-}
 
-.main-visual img.main-visual-profile {
+img.main-visual-profile {
     display: block;
     margin-top: calc(-100vh);
     opacity: 0.0;
@@ -148,10 +145,6 @@ div.header-ui-button {
 
 .main-visual.profile img.main-visual-profile {
     opacity: 1.0;
-}
-
-.main-visual.gallery img.main-visual-color {
-    opacity: 0.0;
 }
 
 .main-visual img.main-visual-gallery {
@@ -162,10 +155,6 @@ div.header-ui-button {
 
 .main-visual.gallery img.main-visual-gallery {
     opacity: 1.0;
-}
-
-.main-visual.product img.main-visual-color {
-    opacity: 0.0;
 }
 
 .main-visual img.main-visual-product {

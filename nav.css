@@ -45,7 +45,6 @@
 }
 
 html,
-body,
 div,
 span,
 object,
@@ -229,17 +228,6 @@ li {
 
 html {
     width: 100%;
-}
-
-body {
-    position: relative;
-    background: #816120;
-    color: #3a2b26;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: YakuHanJPs, "Noto Sans JP", "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
-    text-align: center;
-    -webkit-text-size-adjust: 100%;
 }
 
 
