@@ -249,13 +249,14 @@ img.main-visual-profile {
 }
 
 .main-content-subject h2 {
-    font-family: Roboto;
+    font-family: '思源宋體 TW';
     font-style: normal;
     font-weight: bold;
     font-size: 56px;
     line-height: 100%;
     color: var(--accent-color);
-    margin-top: 232px;
+
+    color:white;
 }
 
 .main-content-subject h3 {

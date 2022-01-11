@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 
 <head>
     <meta charset="utf-8">
     <title>專題</title>
 
+    <!-- Gallery使用的 -->
+    <script crossorigin="anonymous"
+        src="http://assets.squarespace.com/universal/scripts-compressed/moment-js-vendor-2c8245ba6fac7b95a166c-min.en-US.js"></script>
+    <script crossorigin="anonymous"
+        src="http://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-19f316c82441424835c5a-min.en-US.js"></script>
+    <script crossorigin="anonymous"
+        src="http://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-521f95d633ed14e52d4fc-min.en-US.js"></script>
+    <script crossorigin="anonymous"
+        src="http://assets.squarespace.com/universal/scripts-compressed/common-vendors-9b5236550c67479e287d6-min.en-US.js"></script>
+    <script crossorigin="anonymous"
+        src="http://assets.squarespace.com/universal/scripts-compressed/common-388b4c8ddb2738515e244-min.en-US.js"></script>
+    <script
+        data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = { "facebookAppId": "314192535267336", "facebookApiVersion": "v6.0", "rollups": { "squarespace-announcement-bar": { "js": "//assets.squarespace.com/universal/scripts-compressed/announcement-bar-18e1e481948c5df0ffff0-min.en-US.js" }, "squarespace-audio-player": { "css": "//assets.squarespace.com/universal/styles-compressed/audio-player-7273d8fcec67906942b35-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/audio-player-229e98ef264acdbc46fbc-min.en-US.js" }, "squarespace-blog-collection-list": { "css": "//assets.squarespace.com/universal/styles-compressed/blog-collection-list-3d55c64c25996c7633fc2-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-a9c26674729330d84dae7-min.en-US.js" }, "squarespace-calendar-block-renderer": { "css": "//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-5668de53c0ce16e20cc01-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-353ad328d3eb2b384b88f-min.en-US.js" }, "squarespace-chartjs-helpers": { "css": "//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-58ae73137091cd0a61360-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-5cfe0e55ddf36aff42a58-min.en-US.js" }, "squarespace-comments": { "css": "//assets.squarespace.com/universal/styles-compressed/comments-eeb99f32a31032af774cb-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/comments-618c43b3dc6e7a9020a37-min.en-US.js" }, "squarespace-dialog": { "css": "//assets.squarespace.com/universal/styles-compressed/dialog-7b3fdec47b80fd63e5e6f-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/dialog-6f536f622b7e659703a56-min.en-US.js" }, "squarespace-events-collection": { "css": "//assets.squarespace.com/universal/styles-compressed/events-collection-5668de53c0ce16e20cc01-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/events-collection-f030a73a13ca22c08dec3-min.en-US.js" }, "squarespace-form-rendering-utils": { "js": "//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-873ca51eeee4a38667154-min.en-US.js" }, "squarespace-forms": { "css": "//assets.squarespace.com/universal/styles-compressed/forms-1cc007b21ede0b73086c9-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/forms-f7e0d82c557a1b7f813eb-min.en-US.js" }, "squarespace-gallery-collection-list": { "css": "//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-3d55c64c25996c7633fc2-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-96e8ea781e2dc07165adc-min.en-US.js" }, "squarespace-image-zoom": { "css": "//assets.squarespace.com/universal/styles-compressed/image-zoom-60e14b9bac69739c96fa7-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/image-zoom-ae3556196a18c7ea88f33-min.en-US.js" }, "squarespace-pinterest": { "css": "//assets.squarespace.com/universal/styles-compressed/pinterest-3d55c64c25996c7633fc2-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/pinterest-23a2b7ec4479456b9a376-min.en-US.js" }, "squarespace-popup-overlay": { "css": "//assets.squarespace.com/universal/styles-compressed/popup-overlay-e4ea05bd2ae9c1568e432-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/popup-overlay-4275743986964134e63ab-min.en-US.js" }, "squarespace-product-quick-view": { "css": "//assets.squarespace.com/universal/styles-compressed/product-quick-view-663fb8b8c08febe7303f1-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/product-quick-view-49eedc35535de0b381d2f-min.en-US.js" }, "squarespace-products-collection-item-v2": { "css": "//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-60e14b9bac69739c96fa7-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-c810259f1bf1f11fce8a5-min.en-US.js" }, "squarespace-products-collection-list-v2": { "css": "//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-60e14b9bac69739c96fa7-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-9629b47eadea036ea7017-min.en-US.js" }, "squarespace-search-page": { "css": "//assets.squarespace.com/universal/styles-compressed/search-page-568ad8f2a40e76c0175c8-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/search-page-e870116625aa8210caf05-min.en-US.js" }, "squarespace-search-preview": { "js": "//assets.squarespace.com/universal/scripts-compressed/search-preview-3372be5be3653f33ef225-min.en-US.js" }, "squarespace-simple-liking": { "css": "//assets.squarespace.com/universal/styles-compressed/simple-liking-47606e375db2b296c3464-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/simple-liking-b611133b43ae72ac9f6be-min.en-US.js" }, "squarespace-social-buttons": { "css": "//assets.squarespace.com/universal/styles-compressed/social-buttons-b186d09e02921fd7f8e00-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/social-buttons-e0083d353828c583f34bf-min.en-US.js" }, "squarespace-tourdates": { "css": "//assets.squarespace.com/universal/styles-compressed/tourdates-3d55c64c25996c7633fc2-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/tourdates-5e3914d4aa35fad1048a7-min.en-US.js" }, "squarespace-website-overlays-manager": { "css": "//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-5c2f030f6ee94f066dc3d-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-34c261d23598f6f220270-min.en-US.js" } }, "pageType": 2, "website": { "id": "51bde23be4b0f207624f41e6", "identifier": "heroinskateboards", "websiteType": 1, "contentModifiedOn": 1636913165878, "cloneable": false, "hasBeenCloneable": false, "siteStatus": {}, "language": "en-US", "timeZone": "America/Los_Angeles", "machineTimeZoneOffset": -28800000, "timeZoneOffset": -28800000, "timeZoneAbbr": "PST", "siteTitle": "Heroin Skateboards", "fullSiteTitle": "Products \u2014 Heroin Skateboards", "siteDescription": "<p>Official website of Heroin Skateboards.</p>", "location": { "addressTitle": "", "addressLine1": "", "addressLine2": "", "addressCountry": "" }, "logoImageId": "525ee6e1e4b0fe5f668b7294", "shareButtonOptions": { "3": true, "8": true, "7": true, "2": true, "1": true, "4": true, "6": true }, "logoImageUrl": "//images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1381951201534-GPC0RK3YH9I4WI8MPRG4/heroinskateboards.png", "authenticUrl": "http://www.heroinskateboarding.com", "internalUrl": "http://heroinskateboards.squarespace.com", "baseUrl": "http://www.heroinskateboarding.com", "primaryDomain": "www.heroinskateboarding.com", "socialAccounts": [{ "serviceId": 2, "userId": "514670495", "userName": "daniel.titchener", "screenname": "Heroin skateboards", "addedOn": 1371471105275, "profileUrl": "http://www.facebook.com/heroinskateboarding", "iconUrl": "http://graph.facebook.com/514670495/picture?type=square", "metaData": { "service": "facebook" }, "iconEnabled": true, "serviceName": "facebook" }, { "serviceId": 10, "userId": "4540075", "userName": "heroinskateboards", "screenname": "Fos", "addedOn": 1372187643978, "profileUrl": "http://instagram.com/heroinskateboards", "iconUrl": "https://scontent.cdninstagram.com/t51.2885-19/11821776_1478514409109311_675723658_a.jpg", "collectionId": "51c9ebfbe4b043b66a214ab6", "iconEnabled": true, "serviceName": "instagram" }, { "serviceId": 12, "userId": "9063483", "userName": "heroinskateboarding", "screenname": "Heroin Skateboards", "addedOn": 1372196774173, "profileUrl": "http://vimeo.com/heroinskateboarding", "iconUrl": "http://b.vimeocdn.com/ps/280/654/2806548_75.jpg", "iconEnabled": true, "serviceName": "vimeo" }], "typekitId": "", "statsMigrated": true, "screenshotId": "504066a7", "showOwnerLogin": false }, "websiteSettings": { "id": "51bde23ce4b0f207624f41e7", "websiteId": "51bde23be4b0f207624f41e6", "type": "Business", "subjects": [{ "systemSubject": "fitness" }], "country": "GB", "state": "AL", "simpleLikingEnabled": true, "commentLikesAllowed": true, "commentAnonAllowed": true, "commentThreaded": true, "commentApprovalRequired": false, "commentAvatarsOn": true, "commentSortType": 2, "commentFlagThreshold": 0, "commentFlagsAllowed": true, "commentEnableByDefault": true, "commentDisableAfterDaysDefault": 0, "disqusShortname": "", "commentsEnabled": true, "storeSettings": { "returnPolicy": null, "termsOfService": null, "privacyPolicy": null, "expressCheckout": false, "continueShoppingLinkUrl": "/", "useLightCart": false, "showNoteField": false, "shippingCountryDefaultValue": "US", "billToShippingDefaultValue": false, "showShippingPhoneNumber": true, "isShippingPhoneRequired": false, "showBillingPhoneNumber": true, "isBillingPhoneRequired": false, "currenciesSupported": ["USD"], "defaultCurrency": "USD", "selectedCurrency": "USD", "measurementStandard": 1, "showCustomCheckoutForm": false, "checkoutPageMarketingOptInEnabled": false, "enableMailingListOptInByDefault": false, "sameAsRetailLocation": false, "merchandisingSettings": { "scarcityEnabledOnProductItems": false, "scarcityEnabledOnProductBlocks": false, "scarcityMessageType": "DEFAULT_SCARCITY_MESSAGE", "scarcityThreshold": 10, "multipleQuantityAllowedForServices": true, "restockNotificationsEnabled": false, "restockNotificationsMailingListSignUpEnabled": false, "relatedProductsEnabled": false, "relatedProductsOrdering": "random", "soldOutVariantsDropdownDisabled": false, "productComposerOptedIn": false, "productComposerABTestOptedOut": false, "productReviewsEnabled": false }, "isLive": false, "multipleQuantityAllowedForServices": true }, "useEscapeKeyToLogin": true, "ssBadgeType": 1, "ssBadgePosition": 4, "ssBadgeVisibility": 1, "ssBadgeDevices": 1, "ampEnabled": false }, "cookieSettings": { "isCookieBannerEnabled": false, "isRestrictiveCookiePolicyEnabled": false, "isRestrictiveCookiePolicyAbsolute": false, "cookieBannerText": "", "cookieBannerTheme": "", "cookieBannerVariant": "", "cookieBannerPosition": "", "cookieBannerCtaVariant": "", "cookieBannerCtaText": "", "cookieBannerAcceptType": "OPT_IN", "cookieBannerOptOutCtaText": "" }, "websiteCloneable": false, "collection": { "title": "Products", "id": "525ed649e4b0667b5d22aa6d", "fullUrl": "/stuff", "type": 10, "permissionType": 1 }, "subscribed": false, "appDomain": "squarespace.com", "templateTweakable": true, "tweakJSON": { "outerPadding": "50px", "pagePadding": "50px", "product-gallery-auto-crop": "true", "product-image-auto-crop": "true", "topPadding": "0px" }, "templateId": "50749216e4b0933ed3da0a8d", "templateVersion": "7", "pageFeatures": [1, 2, 4], "gmRenderKey": "QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4", "templateScriptsRootUrl": "https://static1.squarespace.com/static/ta/5074801ae4b0933ed3d9d554/681/scripts/", "betaFeatureFlags": ["commerce_product_composer_ab_test_all_users", "member_areas_pricing_options_discounts", "commerce_activation_experiment_add_payment_processor_card", "transactional_email_pipeline_v2_enabled", "campaigns_hide_deleted_automations_panel", "campaigns_new_subscriber_search", "commerce_clearpay", "campaigns_thumbnail_layout", "member_areas_annual_subscriptions", "viewer-role-contributor-invites", "reduce_general_search_api_traffic", "member_areas_billing_state_migration", "commerce_product_review_import_ga", "commerce_pdp_layouts_ga", "commerce_afterpay_pdp", "uas_swagger_session_client", "commerce_etsy_shipping_import", "uas_swagger_token_client", "campaigns_blog_product_image_editor", "campaigns_section_reorder_arrows", "campaigns_show_apply_website_styles_button", "member_areas_schedule_interview", "campaigns_audience_card", "uas_swagger_site_user_account_client", "commerce_site_visitor_metrics", "commerce_product_branching", "campaigns_banner_reduce_size", "category-delete-product-service-enabled", "commerce_etsy_product_import", "background_art_onboarding", "commerce_native_product_reviews", "nested_categories_migration_enabled", "product_composer_feedback_form_on_save", "commerce_instagram_product_checkout_links", "customer_account_creation_recaptcha", "commerce_multiple_product_reviews", "commerce_category_id_discounts_enabled", "startup_checklist", "commerce_restock_notifications", "campaigns_global_uc_ab", "uas_swagger_unauthenticated_session_client", "commerce_product_review_etsy_import"], "impersonatedSession": false, "demoCollections": [{ "collectionId": "5159c7e2e4b096035d250b5f", "deleted": false }], "tzData": { "zones": [[-480, "US", "P%sT", null]], "rules": { "US": [[1967, 2006, null, "Oct", "lastSun", "2:00", "0", "S"], [1987, 2006, null, "Apr", "Sun>=1", "2:00", "1:00", "D"], [2007, "max", null, "Mar", "Sun>=8", "2:00", "1:00", "D"], [2007, "max", null, "Nov", "Sun>=1", "2:00", "0", "S"]] } }, "showAnnouncementBar": false };</script>
+    <script type="text/javascript"> SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script>
+    <link rel="stylesheet" type="text/css"
+        href="https://static1.squarespace.com/static/sitecss/51bde23be4b0f207624f41e6/152/50749216e4b0933ed3da0a8d/525eceb8e4b0f07bb3e161b4/681-05142015/1612320559307/site.css" />
+    <!------------------->
+
     <!--重要的CSS-->
     <link href="origin.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+        function getPosition(element) {
+            var x = 0;
+            var y = 0;
+
+            while (element) {
+                x += element.offsetLeft - element.scrollLeft + element.clientLeft;
+                y += element.offsetTop - element.scrollLeft + element.clientTop;
+                element = element.offsetParent;
+            }
+
+            return { x: x, y: y };
+        }
+    </script>
 
     <!--有關滑鼠滾動-->
     <script type="text/javascript">
@@ -17,32 +50,19 @@
 
         window.addEventListener('scroll', (e) => {
             const lastKnownScrollPosition = window.scrollY;
-            const top_to_profile_Threshold = (document.documentElement.scrollHeight - document.documentElement.clientHeight)*(1/4);  //原:150
-            const profile_to_gallery_Threshold =  (document.documentElement.scrollHeight - document.documentElement.clientHeight)*(2/4);
-            const gallery_to_product_Threshold = (document.documentElement.scrollHeight - document.documentElement.clientHeight)*(3/4);
+            const top_to_profile_Threshold = (getPosition(document.getElementById('profile')).y - 56) / 2;
+            const profile_to_gallery_Threshold = ((getPosition(document.getElementById('gallery')).y - 56) + top_to_profile_Threshold) / 2;
+            const gallery_to_product_Threshold = ((getPosition(document.getElementById('product')).y - 56) + profile_to_gallery_Threshold) / 2;
 
-            if(lastKnownScrollPosition<top_to_profile_Threshold)
-            {
+            if (lastKnownScrollPosition <= top_to_profile_Threshold) {
                 document.querySelector('.main-visual').classList.remove('profile');
-                document.querySelector('.main-visual').classList.remove('gallery');
-                document.querySelector('.main-visual').classList.remove('product');
-            }
-            else if(top_to_profile_Threshold<lastKnownScrollPosition&&lastKnownScrollPosition<profile_to_gallery_Threshold)
-            {
+            } else if (top_to_profile_Threshold < lastKnownScrollPosition && lastKnownScrollPosition <= profile_to_gallery_Threshold) {
                 document.querySelector('.main-visual').classList.remove('gallery');
                 document.querySelector('.main-visual').classList.add('profile');
+            } else if (profile_to_gallery_Threshold < lastKnownScrollPosition && lastKnownScrollPosition <= gallery_to_product_Threshold) {
                 document.querySelector('.main-visual').classList.remove('product');
-            }
-            else if(profile_to_gallery_Threshold<lastKnownScrollPosition&&lastKnownScrollPosition<gallery_to_product_Threshold)
-            {
-                document.querySelector('.main-visual').classList.remove('profile');
                 document.querySelector('.main-visual').classList.add('gallery');
-                document.querySelector('.main-visual').classList.remove('product');
-            }
-            else if(gallery_to_product_Threshold<lastKnownScrollPosition)
-            {
-                document.querySelector('.main-visual').classList.remove('profile');
-                document.querySelector('.main-visual').classList.remove('gallery');
+            } else if (gallery_to_product_Threshold < lastKnownScrollPosition) {
                 document.querySelector('.main-visual').classList.add('product');
             }
         });
@@ -58,9 +78,12 @@
             <ul class="header_nav_list">
                 <li class="current"><a href="#top">TOP</a></li>
 
-                <li><a href="javascript:;" onclick="document.getElementById('profile').scrollIntoView()">PROFILE</a></li>
-                <li><a href="javascript:;" onclick="document.getElementById('gallery').scrollIntoView()">GALLERY</a></li>
-                <li><a href="javascript:;" onclick="document.getElementById('product').scrollIntoView()">PRODUCT</a></li>
+                <li><a href="javascript:;" onclick="document.getElementById('profile').scrollIntoView()">PROFILE</a>
+                </li>
+                <li><a href="javascript:;" onclick="document.getElementById('gallery').scrollIntoView()">GALLERY</a>
+                </li>
+                <li><a href="javascript:;" onclick="document.getElementById('product').scrollIntoView()">PRODUCT</a>
+                </li>
 
             </ul>
         </div>
@@ -68,45 +91,220 @@
 
     <div class="wrapper">
         <div class="main">
-            <!--main-visual:一開始的背景 / main-visual-line:往下滑修改的背景-->
+
+            <!--漸變背景設定-->
             <div class="main-visual">
                 <img class="main-visual-color" src="top_bg_lowerEarth.png">
                 <img class="main-visual-profile" src="profile_bg_dragon.png">
                 <img class="main-visual-gallery" src="gallery_bg_universe.png">
                 <img class="main-visual-product" src="product_bg_universe.png">
             </div>
+
             <div class="main-content">
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <div class="main-content-subject">
+                    <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">Profile</h2>
+                    <h2 id="profile">簡 介</h2>
+                    <h3>About Reji</h3>
+                    <p>二〇〇一年出生於台灣台北市。今年二十歲。目前就讀於國立陽明交通大學資訊工程系三年級。曾分別至一電商與一問卷公司做寫程式的實習生。課業之餘從事貼圖製作、個人數位插畫繪製，與實地速寫，尚未有接案經驗。
+                        插畫系列作《宇宙狂想》靜待復更。
+                    </p>
 
-                    <h2 id="profile">Profile</h2>
-                    <h3>About</h3>
-                    <p>Don't work into that gental night.</p>
-                <div class="main-content-subject">
-                    <h2 id="gallery">Gallery</h2>
-                    <h3>Illstration</h3>
-                    <p>Rage, rage until the fire of life dies.</p>
-                    <div class="main-content-subject-footer-ui-button">
+                    <div class="main-content-subject">
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+                        <h2 id="gallery">Gallery</h2>
+                        <h3>Illstration</h3>
+                        <p>Rage, rage until the fire of life dies.</p>
+
+                        <section id="page" role="main" data-content-field="main-content">
+                            <div class="sqs-layout sqs-grid-12 columns-12" data-type="page"
+                                data-updated-on="1562115614062" id="page-525ed649e4b0667b5d22aa6d">
+                                <div class="row sqs-row">
+                                    <div class="col sqs-col-12 span-12">
+                                        <div class="sqs-block gallery-block sqs-block-gallery"
+                                            data-block-json="&#123;&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;methodOption&quot;:&quot;transient&quot;,&quot;existingGallery&quot;:&quot;51be55ade4b0656299f41416&quot;,&quot;transparentBackground&quot;:false,&quot;aspectRatio&quot;:null,&quot;auto-crop&quot;:false,&quot;autoplay&quot;:false,&quot;blockAnimation&quot;:&quot;none&quot;,&quot;collectionId&quot;:&quot;56a28e9da128e6ec293af2e1&quot;,&quot;controls&quot;:true,&quot;design&quot;:&quot;slideshow&quot;,&quot;existingGalleryId&quot;:&quot;51be55ade4b0656299f41416&quot;,&quot;meta-position&quot;:&quot;bottom&quot;,&quot;show-meta&quot;:false,&quot;show-meta-basic&quot;:true,&quot;show-meta-only-title&quot;:false,&quot;show-meta-only-description&quot;:false,&quot;show-meta-on-hover&quot;:false,&quot;square-thumbs&quot;:true,&quot;thumbnail-strip-height&quot;:80,&quot;thumbnail-strip-margin&quot;:20,&quot;thumbnails&quot;:true,&quot;vSize&quot;:null,&quot;transientGalleryId&quot;:&quot;56a28e9da128e6ec293af2e1&quot;,&quot;newWindow&quot;:false&#125;"
+                                            data-block-type="8" id="block-yui_3_17_2_1_1408743038340_23704">
+                                            <div class="sqs-block-content">
+                                                <div
+                                                    class="sqs-gallery-container sqs-gallery-block-slideshow sqs-gallery-has-controls sqs-gallery-has-thumbnails sqs-gallery-block-show-meta block-animation-none clear">
+                                                    <div class="sqs-gallery">
+
+                                                        <div class="slide content-fit" data-type="image"
+                                                            data-click-through-url="">
+
+                                                            <!-- 第一張圖 -->
+                                                            <noscript><img src="測試圖片.png"/></noscript><img class="thumb-image" data-src="測試圖片.png"/>
+                                                            <div class="color-overlay"></div>
+                                                        </div>
+
+                                                        <div class="slide content-fit" data-type="image"
+                                                            data-click-through-url="">
+
+                                                            <!-- 第二張圖 -->
+                                                            <noscript><img
+                                                                    src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289720986-U8GGWELH6G0YFJF7XW3W/DITCH+WITCH+5+Catalog+Page.png"
+                                                                    alt="DITCH WITCH 5 Catalog Page.png" /></noscript><img
+                                                                class="thumb-image"
+                                                                data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289720986-U8GGWELH6G0YFJF7XW3W/DITCH+WITCH+5+Catalog+Page.png"
+                                                                data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289720986-U8GGWELH6G0YFJF7XW3W/DITCH+WITCH+5+Catalog+Page.png"
+                                                                data-image-dimensions="1280x832"
+                                                                data-image-focal-point="0.5,0.5"
+                                                                alt="DITCH WITCH 5 Catalog Page.png" data-load="false"
+                                                                data-image-id="6169483786c88c213e979d97"
+                                                                data-type="image" />
+
+
+
+                                                            <div class="color-overlay"></div>
+                                                        </div>
+
+                                                        <div class="slide content-fit" data-type="image"
+                                                            data-click-through-url="">
+
+                                                            <noscript><img
+                                                                    src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289836645-IIN9EFBMRQAN2D0IX47Q/Mini+Mutant+catalog+page.png"
+                                                                    alt="Mini Mutant catalog page.png" /></noscript><img
+                                                                class="thumb-image"
+                                                                data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289836645-IIN9EFBMRQAN2D0IX47Q/Mini+Mutant+catalog+page.png"
+                                                                data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289836645-IIN9EFBMRQAN2D0IX47Q/Mini+Mutant+catalog+page.png"
+                                                                data-image-dimensions="1500x975"
+                                                                data-image-focal-point="0.5,0.5"
+                                                                alt="Mini Mutant catalog page.png" data-load="false"
+                                                                data-image-id="616948abfd70371ff05aaee8"
+                                                                data-type="image" />
+
+
+
+                                                            <div class="color-overlay"></div>
+                                                        </div>
+
+                                                        <div class="slide content-fit" data-type="image"
+                                                            data-click-through-url="">
+
+                                                            <noscript><img
+                                                                    src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289888621-BKGBLJC97QAU79RO3RBT/Symmetrical+Edge+Catalog+Page.png"
+                                                                    alt="Symmetrical Edge Catalog Page.png" /></noscript><img
+                                                                class="thumb-image"
+                                                                data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289888621-BKGBLJC97QAU79RO3RBT/Symmetrical+Edge+Catalog+Page.png"
+                                                                data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289888621-BKGBLJC97QAU79RO3RBT/Symmetrical+Edge+Catalog+Page.png"
+                                                                data-image-dimensions="1500x975"
+                                                                data-image-focal-point="0.0,0.4820963541666667"
+                                                                alt="Symmetrical Edge Catalog Page.png"
+                                                                data-load="false"
+                                                                data-image-id="616948dfdccc44703c0d1210"
+                                                                data-type="image" />
+                                                            <div class="color-overlay"></div>
+                                                        </div>
+
+                                                        <div class="slide content-fit" data-type="image"
+                                                            data-click-through-url="">
+
+                                                            <noscript><img
+                                                                    src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289738534-JTD6TO957VBLNY4QOLS2/Clothing+Catalog+Page.png"
+                                                                    alt="Clothing Catalog Page.png" /></noscript><img
+                                                                class="thumb-image"
+                                                                data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289738534-JTD6TO957VBLNY4QOLS2/Clothing+Catalog+Page.png"
+                                                                data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289738534-JTD6TO957VBLNY4QOLS2/Clothing+Catalog+Page.png"
+                                                                data-image-dimensions="1500x975"
+                                                                data-image-focal-point="0.5,0.5"
+                                                                alt="Clothing Catalog Page.png" data-load="false"
+                                                                data-image-id="61694848341bdb48e915d221"
+                                                                data-type="image" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 縮圖 -->
+                                                <div class="sqs-gallery-thumbnails">
+                                                    <img tabindex="0" role="button" aria-label="Slide 1"
+                                                        data-load="false"
+                                                        data-src="測試圖片.png"
+                                                        data-image-dimensions="1500x975"
+                                                        data-image-focal-point="0.5,0.5"
+                                                        alt="Heroin Catalog 2021 Hirotton pg 2.png" data-type="image" />
+                                                    <img tabindex="0" role="button" aria-label="Slide 2"
+                                                        data-load="false"
+                                                        data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289720986-U8GGWELH6G0YFJF7XW3W/DITCH+WITCH+5+Catalog+Page.png"
+                                                        data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289720986-U8GGWELH6G0YFJF7XW3W/DITCH+WITCH+5+Catalog+Page.png"
+                                                        data-image-dimensions="1280x832"
+                                                        data-image-focal-point="0.5,0.5"
+                                                        alt="DITCH WITCH 5 Catalog Page.png" data-type="image" />
+                                                    <img tabindex="0" role="button" aria-label="Slide 3"
+                                                        data-load="false"
+                                                        data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289836645-IIN9EFBMRQAN2D0IX47Q/Mini+Mutant+catalog+page.png"
+                                                        data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289836645-IIN9EFBMRQAN2D0IX47Q/Mini+Mutant+catalog+page.png"
+                                                        data-image-dimensions="1500x975"
+                                                        data-image-focal-point="0.5,0.5"
+                                                        alt="Mini Mutant catalog page.png" data-type="image" />
+                                                    <img tabindex="0" role="button" aria-label="Slide 4"
+                                                        data-load="false"
+                                                        data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289888621-BKGBLJC97QAU79RO3RBT/Symmetrical+Edge+Catalog+Page.png"
+                                                        data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289888621-BKGBLJC97QAU79RO3RBT/Symmetrical+Edge+Catalog+Page.png"
+                                                        data-image-dimensions="1500x975"
+                                                        data-image-focal-point="0.0,0.4820963541666667"
+                                                        alt="Symmetrical Edge Catalog Page.png" data-type="image" />
+                                                    <img tabindex="0" role="button" aria-label="Slide 5"
+                                                        data-load="false"
+                                                        data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289738534-JTD6TO957VBLNY4QOLS2/Clothing+Catalog+Page.png"
+                                                        data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1634289738534-JTD6TO957VBLNY4QOLS2/Clothing+Catalog+Page.png"
+                                                        data-image-dimensions="1500x975"
+                                                        data-image-focal-point="0.5,0.5" alt="Clothing Catalog Page.png"
+                                                        data-type="image" />
+                                                    <img tabindex="0" role="button" aria-label="Slide 6"
+                                                        data-load="false"
+                                                        data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1620766205448-43QBZDK9WY8E30M38ULW/Heroin+Summer+Catalog+PG1.png"
+                                                        data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1620766205448-43QBZDK9WY8E30M38ULW/Heroin+Summer+Catalog+PG1.png"
+                                                        data-image-dimensions="1500x975"
+                                                        data-image-focal-point="0.5,0.5"
+                                                        alt="Heroin Summer Catalog PG1.png" data-type="image" />
+                                                    <img tabindex="0" role="button" aria-label="Slide 7"
+                                                        data-load="false"
+                                                        data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1620766184509-2V94NG1VGNUY3XD0LJUF/Heroin+Summer+Catalog+Kinoshita.png"
+                                                        data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1620766184509-2V94NG1VGNUY3XD0LJUF/Heroin+Summer+Catalog+Kinoshita.png"
+                                                        data-image-dimensions="1500x975"
+                                                        data-image-focal-point="0.5,0.5"
+                                                        alt="Heroin Summer Catalog Kinoshita.png" data-type="image" />
+                                                    <img tabindex="0" role="button" aria-label="Slide 8"
+                                                        data-load="false"
+                                                        data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1620766119223-2IVNUYW9GGX5VVC6MWQP/Heroin+Summer+Catalog+Croc.png"
+                                                        data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1620766119223-2IVNUYW9GGX5VVC6MWQP/Heroin+Summer+Catalog+Croc.png"
+                                                        data-image-dimensions="1500x975"
+                                                        data-image-focal-point="0.5,0.5"
+                                                        alt="Heroin Summer Catalog Croc.png" data-type="image" />
+                                                    <img tabindex="0" role="button" aria-label="Slide 9"
+                                                        data-load="false"
+                                                        data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1585770208433-A41L4GVUUADZNHGNPBXF/Summer+2020+Eyes+Page.png"
+                                                        data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1585770208433-A41L4GVUUADZNHGNPBXF/Summer+2020+Eyes+Page.png"
+                                                        data-image-dimensions="1500x975"
+                                                        data-image-focal-point="0.5,0.5" alt="Summer 2020 Eyes Page.png"
+                                                        data-type="image" />
+                                                    <img tabindex="0" role="button" aria-label="Slide 10"
+                                                        data-load="false"
+                                                        data-src="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1620766474499-GO1P3GP6PNU8LGJMJNST/Heroin+Summer+Catalog+Razor+Edge.png"
+                                                        data-image="https://images.squarespace-cdn.com/content/v1/51bde23be4b0f207624f41e6/1620766474499-GO1P3GP6PNU8LGJMJNST/Heroin+Summer+Catalog+Razor+Edge.png"
+                                                        data-image-dimensions="1500x975"
+                                                        data-image-focal-point="0.5,0.5"
+                                                        alt="Heroin Summer Catalog Razor Edge.png" data-type="image" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="main-content-subject">
+                            <h2 id="product">Product</h2>
+                            <h3>Sk8</h3>
+                            <p>We are planing to make skateboard, T-shirts, pants, and illstration artbook.</p>
+                        </div>
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
                     </div>
-                <div class="main-content-subject">
-                    <h2 id="product">Product</h2>
-                    <h3>Sk8</h3>
-                    <p>We are planing to make skateboard, T-shirts, pants, and illstration artbook.</p>
-                    <div class="main-content-subject-footer-ui-button">
-                    </div>
-                    <h2>EVENT HASHTAG</h2>
-                    <div class="footer-event-hashtag">
-                        <a href="https://twitter.com/search?q=%23Drawfest2" rel="noopener" target="_blank">#Drawfest2</a>
-                    </div>
-                    <h2>CONTACT INFORMATION</h2>
-                    <div class="footer-contacts">
-                        <p class="footer-contact">For Applicants: <a href="https://www.pixiv.net/support?mode=inquiry&type=25&service=pixiv&subject=drawfest%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&ref=faq" rel="noopener" target="_blank">Click Here</a></p>
-                        <p class="footer-contact">For Media: ba@ml.pixiv.co.jp</p>
-                    </div>
-                </div>>
+                </div>
+
             </div>
-        </div>
-
-    </div>
 </body>
 
 </html>
