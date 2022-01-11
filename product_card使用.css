@@ -1,0 +1,16 @@
+.product_card {
+    /* Add shadows to create the "card" effect */
+    /* box-shadow: 0 4px 8px 0 rgb(255, 0, 0); */
+    transition: 0.3s;
+    
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .product_card:hover {
+    box-shadow: 0 0 8px 10px rgba(4, 0, 255, 0.459);
+  }
+  
+  /* Add some padding inside the card container */
+  .product_card_container {
+    padding: 2px 16px;
+  }
