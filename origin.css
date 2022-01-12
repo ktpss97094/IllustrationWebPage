@@ -196,7 +196,7 @@ img.main-visual-profile {
     background:black;
     margin-left:830px;
     /* opacity: 0.5; */
-    
+    overflow: scroll; /*若文字超出 block 範圍，則自動生成 scroll bar*/
 }
 
 #gallery_text_box h3{
