@@ -179,7 +179,7 @@ img.main-visual-profile {
 }
 
 .main-content-subject h2 {
-    font-family: '思源宋體 TW';
+    font-family: '思源宋體 TW', 'Noto Serif TC';
     font-style: normal;
     font-weight: bold;
     font-size: 56px;
@@ -200,7 +200,7 @@ img.main-visual-profile {
 }
 
 #gallery_text_box h3{
-    font-family: '思源宋體 TW';
+    font-family: '思源宋體 TW', 'Noto Serif TC';
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
