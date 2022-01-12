@@ -1,16 +1,44 @@
 .product_card {
-    /* Add shadows to create the "card" effect */
-    /* box-shadow: 0 4px 8px 0 rgb(255, 0, 0); */
-    transition: 0.3s;
-    
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .product_card:hover {
-    box-shadow: 0 0 8px 10px rgba(4, 0, 255, 0.459);
-  }
-  
-  /* Add some padding inside the card container */
-  .product_card_container {
-    padding: 2px 16px;
-  }
+  /* Add shadows to create the "card" effect */
+  /* box-shadow: 0 4px 8px 0 rgb(255, 0, 0); */
+  transition: 0.3s;
+  background-color: white;
+  width:240px;
+  height:350px;
+  margin:1em;
+}
+
+/* On mouse-over, add a deeper shadow */
+.product_card:hover {
+  box-shadow: 0 0 8px 10px rgba(4, 0, 255, 0.459);
+}
+
+/* Add some padding inside the card container */
+.product_card_container {
+  padding: 1em;
+}
+
+.product_card_container h4{
+  font-weight: bold;
+  font-family: '思源宋體 TW';
+  color:black;
+  font-size: 34px;
+  margin-top: 0px;
+
+  /* 置中設定 */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.product_card_container p{
+  font-family: '思源宋體 TW';
+  color:black;
+  font-weight: lighter;
+  margin-top: 7px;
+
+  /* 置中設定 */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}

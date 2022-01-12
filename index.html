@@ -41,32 +41,8 @@
         }
     </script>
 
-    <!--有關滑鼠滾動-->
-    <script type="text/javascript">
-        window.addEventListener('load', (e) => {
-            const uri = new URL(window.location.href);
-            history.replaceState('', '', uri.pathname);
-        });
-
-        window.addEventListener('scroll', (e) => {
-            const lastKnownScrollPosition = window.scrollY;
-            const top_to_profile_Threshold = (getPosition(document.getElementById('profile')).y - 56) / 2;
-            const profile_to_gallery_Threshold = ((getPosition(document.getElementById('gallery')).y - 56) + top_to_profile_Threshold) / 2;
-            const gallery_to_product_Threshold = ((getPosition(document.getElementById('product')).y - 56) + profile_to_gallery_Threshold) / 2;
-
-            if (lastKnownScrollPosition <= top_to_profile_Threshold) {
-                document.querySelector('.main-visual').classList.remove('profile');
-            } else if (top_to_profile_Threshold < lastKnownScrollPosition && lastKnownScrollPosition <= profile_to_gallery_Threshold) {
-                document.querySelector('.main-visual').classList.remove('gallery');
-                document.querySelector('.main-visual').classList.add('profile');
-            } else if (profile_to_gallery_Threshold < lastKnownScrollPosition && lastKnownScrollPosition <= gallery_to_product_Threshold) {
-                document.querySelector('.main-visual').classList.remove('product');
-                document.querySelector('.main-visual').classList.add('gallery');
-            } else if (gallery_to_product_Threshold < lastKnownScrollPosition) {
-                document.querySelector('.main-visual').classList.add('product');
-            }
-        });
-    </script>
+    <!-- 切換背景 -->
+    <script src="change_bg.js" data-name="static-context"></script>
 
     <!--側邊欄CSS-->
     <link rel="stylesheet" href="nav.css">
@@ -97,7 +73,8 @@
 
             <!--漸變背景設定-->
             <div class="main-visual">
-                <img class="main-visual-color" src="top_bg_lowerEarth.png">
+                <!-- <img class="main-visual-color" src="黑背景.png"> -->
+                <img class="main-visual-top" src="top_bg_lowerEarth.png">
                 <img class="main-visual-profile" src="profile_bg_dragon.png">
                 <img class="main-visual-gallery" src="gallery_bg_universe.png">
                 <img class="main-visual-product" src="product_bg_universe.png">
@@ -165,7 +142,7 @@
 
                                     <!-- 第二張圖 -->
                                     <div>
-                                        <img data-src="測試圖片2.png">
+                                        <img data-src="gallery-imgs/2_M1.png">
                                         <div id="gallery_text_box">
                                             <h3>
                                                 這是一隻無尾熊這是一隻無尾熊這是一隻無尾熊這是一隻無尾熊這是一隻無尾熊
@@ -175,7 +152,7 @@
 
                                     <!-- 第三張圖 -->
                                     <div>
-                                        <img data-src="測試圖片3.png">
+                                        <img data-src="gallery-imgs/3_Arp273.png">
                                         <div id="gallery_text_box">
                                             <h3>
                                                 這是一顆芒果這是一顆芒果這是一顆芒果這是一顆芒果這是一顆芒果
@@ -185,7 +162,7 @@
 
                                     <!-- 第四張圖 -->
                                     <div>
-                                        <img data-src="測試圖片4.png">
+                                        <img data-src="gallery-imgs/4_NGC2237.png">
                                         <div id="gallery_text_box">
                                             <h3>
                                                 這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲
@@ -272,28 +249,165 @@
                 </div>
 
                 <div class="main-content-subject">
-                    
-                    <br/><br/><br/>
+
+                    <br /><br /><br />
 
                     <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">PRODUCT</h2>
-                    <h2 id="gallery">企 劃 中 商 品</h2>
+                    <h2 id="product">企 劃 中 商 品</h2>
 
-                    <br/><br/><br/><br/><br/>
+                    <br /><br /><br /><br /><br />
 
-                    <!-- 產品card -->
-                    <div class="product_card" style="width:40%;background-color: white;">
-                        <img src="product-imgs\outfit.png">
-                        <div class="product_card_container">
-                            <h4 style="font-family: '思源宋體 TW';color:black;"><b>John Doe</b></h4>
-                            <p style="font-family: '思源宋體 TW';color:black;">Architect & Engineer</p>
-                        </div>
-                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <!-- 產品一 -->
+                                <div class="product_card">
+                                    <img src="product-imgs\outfit.png">
+                                    <div class="product_card_container">
+                                        <h4>
+                                            限量帽T
+                                        </h4>
+                                        <p>
+                                            NTD $9999999
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
 
-                    <br/><br/><br/><br/><br/>
+                            <td>
+                                <!-- 產品二 -->
+                                <div class="product_card">
+                                    <img src="product-imgs\產品測試圖片2.jfif">
+                                    <div class="product_card_container">
+                                        <h4>
+                                            捕夢網
+                                        </h4>
+                                        <p>
+                                            NTD $30
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                    <!-- 產品三 -->
+                                <div class="product_card">
+                                    <img src="product-imgs\產品測試圖片3.jfif">
+                                    <div class="product_card_container">
+                                        <h4>
+                                            Raid
+                                        </h4>
+                                        <p>
+                                            NTD $3000
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <!-- 產品四 -->
+                                <div class="product_card">
+                                    <img src="product-imgs\outfit.png">
+                                    <div class="product_card_container">
+                                        <h4>
+                                            限量帽T
+                                        </h4>
+                                        <p>
+                                            NTD $9999999
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <!-- 產品五 -->
+                                <div class="product_card">
+                                    <img src="product-imgs\產品測試圖片2.jfif">
+                                    <div class="product_card_container">
+                                        <h4>
+                                            捕夢網
+                                        </h4>
+                                        <p>
+                                            NTD $30
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                    <!-- 產品六 -->
+                                <div class="product_card">
+                                    <img src="product-imgs\產品測試圖片3.jfif">
+                                    <div class="product_card_container">
+                                        <h4>
+                                            Raid
+                                        </h4>
+                                        <p>
+                                            NTD $3000
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <!-- 產品七 -->
+                                <div class="product_card">
+                                    <img src="product-imgs\outfit.png">
+                                    <div class="product_card_container">
+                                        <h4>
+                                            限量帽T
+                                        </h4>
+                                        <p>
+                                            NTD $9999999
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <!-- 產品八 -->
+                                <div class="product_card">
+                                    <img src="product-imgs\產品測試圖片2.jfif">
+                                    <div class="product_card_container">
+                                        <h4>
+                                            捕夢網
+                                        </h4>
+                                        <p>
+                                            NTD $30
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                    <!-- 產品九 -->
+                                <div class="product_card">
+                                    <img src="product-imgs\產品測試圖片3.jfif">
+                                    <div class="product_card_container">
+                                        <h4>
+                                            Raid
+                                        </h4>
+                                        <p>
+                                            NTD $3000
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br /><br /><br /><br /><br />
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
