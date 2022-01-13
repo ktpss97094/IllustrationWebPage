@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .main-visual {
     position: fixed;
     top: 0px;
@@ -94,20 +98,20 @@ img.main-visual-profile {
     color: white;
 }
 
-#gallery_text_box{
-    position:relative;
+#gallery_text_box {
+    position: relative;
     width: 300px;
     height: 600px;
-    background:black;
 
+    background: black;
     /* margin-left:830px;
     margin-top:-550px; */
-    bottom:640px;
-    left:830px;
+    bottom: 640px;
+    left: 830px;
     overflow: scroll;
 }
 
-#gallery_text_box h3{
+#gallery_text_box h3 {
     font-family: '思源宋體 TW', 'Noto Serif TC';
     font-style: normal;
     font-weight: bold;
