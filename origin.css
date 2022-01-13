@@ -104,6 +104,7 @@ img.main-visual-profile {
     margin-top:-550px; */
     bottom:640px;
     left:830px;
+    overflow: scroll;
 }
 
 #gallery_text_box h3{
