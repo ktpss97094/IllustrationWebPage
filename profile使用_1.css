@@ -101,8 +101,11 @@ img {
 .ik {
     display: block;
     letter-spacing: 0;
-    min-width: 32px;
-    min-height: 32px;
+
+    /* 社群網站連結icon圈圈大小 */
+    min-width: 64px;
+    min-height: 64px;
+
     font-size: 18px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -119,16 +122,6 @@ img {
     justify-content: center;
     -webkit-transition: background .2s linear, color .2s linear, opacity .2s linear;
     transition: background .2s linear, color .2s linear, opacity .2s linear
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .ik {
-        line-height: 32px
-    }
-}
-
-.ik-style-solid .ik {
-    border-radius: 0.3125rem
 }
 
 .ik-style-solid.ik-color-black .ik {
@@ -155,10 +148,6 @@ img {
     background: #0016C0
 }
 
-.ik-color-black.ik-style-solid .ik:hover {
-    color: #fff
-}
-
 @font-face {
     font-family: 'icons';
     src: url(https://www.tylerklimek.com/assets/website/icons-7cba7f6637d37c0353782e6b64c3d03f.woff2) format("woff2"), url(https://www.tylerklimek.com/assets/website/icons-948a99fbdcc6d3e2dfbbdf4bff55f5cf.woff) format("woff");
@@ -167,7 +156,7 @@ img {
 }
 
 .circle {
-    border-radius: 50%
+    border-radius: 100%
 }
 
 *, *:before, *:after {
