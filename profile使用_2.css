@@ -1,0 +1,167 @@
+:root {
+    --notify-color-primary: var(--accent-color);
+    --short-url-copied-color: var(--accent-color)
+}
+
+body {
+    font-size: 0.875rem;
+    line-height: 1.125;
+    color: var(--body-color);
+    background-color: var(--body-bg)
+}
+
+.site-content {
+    min-height: 25rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem
+}
+
+@media (min-width: 48em) {
+    .site-content {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem
+    }
+}
+
+@media (min-width: 64em) {
+    .site-content {
+        margin-left: 5rem;
+        margin-right: 5rem
+    }
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    -webkit-transition: color 0.25s cubic-bezier(0.45, 0.3, 0.15, 0.95), opacity 0.25s cubic-bezier(0.45, 0.3, 0.15, 0.95);
+    transition: color 0.25s cubic-bezier(0.45, 0.3, 0.15, 0.95), opacity 0.25s cubic-bezier(0.45, 0.3, 0.15, 0.95)
+}
+
+a:focus, a:active {
+    outline: 0
+}
+
+a:hover {
+    color: var(--accent-color-darker)
+}
+
+@media (max-width: 47.9375em) {
+    h2, h3, h4 {
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.75rem
+}
+
+@media (max-width: 47.9375em) {
+    h2 {
+        font-size: 1.375rem;
+        line-height: 2.25rem
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2.0625rem
+}
+
+@media (max-width: 47.9375em) {
+    h3 {
+        font-size: 1.125rem;
+        line-height: 2rem
+    }
+}
+
+h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem
+}
+
+@media (max-width: 47.9375em) {
+    h4 {
+        font-size: 1rem;
+        line-height: 1.625rem
+    }
+}
+
+h4+p {
+    margin-top: 0.625rem
+}
+
+.container-sm {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%
+}
+
+.container-sm {
+    max-width: 51.25rem
+}
+
+.about-page {
+    font-size: 1.125rem;
+    line-height: 1.6
+}
+
+.about-main {
+    text-align: center;
+    margin: 0 -1.25rem;
+    padding: 5.375rem 0 4.375rem;
+    color: var(--subtitle-color);
+
+    /* profile格背景顏色 */
+    /* background: var(--body-bg-darker) */
+}
+
+@media (min-width: 48em) {
+    .about-main {
+        margin-left: -2.5rem;
+        margin-right: -2.5rem
+    }
+}
+
+@media (min-width: 64em) {
+    .about-main {
+        margin-left: -5rem;
+        margin-right: -5rem
+    }
+}
+
+.about-name {
+    color: var(--site-title-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 0.75rem
+}
+
+@media (min-width: 48em) {
+    .about-name {
+        font-size: 2.625rem
+    }
+}
+
+.about-location {
+    font-size: 0.875rem;
+    margin-top: 0.5625rem
+}
+
+.about-social {
+    margin-top: 1.625rem
+}
+
+.about-social .so-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0.3125rem 0.625rem
+}
+
+:root {
+    --store-grid-gutter: 1.875rem
+}

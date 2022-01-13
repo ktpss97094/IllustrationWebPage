@@ -1,0 +1,49 @@
+:root {
+    --accent-color: #13aff0;
+    --accent-color-darker: #0fadef;
+    --link-color: #bbbbbb;
+    --link-color-darker: #b9b9b9;
+    --border-color: #222222;
+    --border-color-lighter: #333333;
+    --border-color-rgb: 34, 34, 34;
+    --subtitle-color: #b7b7b7;
+    --site-title-color: #ffffff;
+    --body-bg: #171717;
+    --body-bg-rgb: 23, 23, 23;
+    --body-bg-lighter: #242424;
+    --body-bg-darker: #0a0a0a;
+    --body-bg-darkest: black;
+    --body-color: #bbbbbb;
+    --body-color-darker: #b9b9b9;
+    --header-bg: #171717;
+    --footer-bg: #171717;
+    --nav-album-bg: #292929;
+    --project-title-color: #ffffff;
+    --about-link-bg: #292929;
+    --social-circle-bg: #292929;
+    --social-circle-color: #bbbbbb;
+    --social-circle-border: #222222;
+    --input-label-color: #9b9b9b;
+    --input-border-color: #474747;
+    --contact-subtitle-color: #b7b7b7;
+    --footer-text-color: #bbbbbb;
+    --lib-perfect-scrollbar-bg: #454545;
+    --component-notify-bg: #313131;
+    --lightness-body-5: #242424;
+    --lightness-body-10: #313131;
+    --font-family-primary: 'Work Sans', Helvetica, Arial, sans-serif;
+    --font-family-secondary: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+/* Custom options via Theme Customizer */
+
+body, p {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 70em) {
+    body, p {
+        font-size: 13px;
+    }
+}

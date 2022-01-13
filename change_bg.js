@@ -1,5 +1,18 @@
 var prevScroll=0;
 
+function getPosition(element) {
+    var x = 0;
+    var y = 0;
+
+    while (element) {
+        x += element.offsetLeft - element.scrollLeft + element.clientLeft;
+        y += element.offsetTop - element.scrollLeft + element.clientTop;
+        element = element.offsetParent;
+    }
+
+    return { x: x, y: y };
+}
+
 window.addEventListener('load', (e) => {
     const uri = new URL(window.location.href);
     history.replaceState('', '', uri.pathname);

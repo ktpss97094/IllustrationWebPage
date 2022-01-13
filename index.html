@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>專題</title>
 
-    <!-- Gallery使用的 -->
+    <!-- Gallery使用CSS -->
     <script crossorigin="anonymous"
         src="http://assets.squarespace.com/universal/scripts-compressed/moment-js-vendor-2c8245ba6fac7b95a166c-min.en-US.js"></script>
     <script crossorigin="anonymous"
@@ -22,24 +22,11 @@
     <link rel="stylesheet" type="text/css" href="Gallery使用CSS_1.css" />
     <!------------------->
 
-    <!--重要的CSS-->
+    <!-- google字型API -->
     <link href='https://fonts.googleapis.com/css?family=Noto Serif TC' rel='stylesheet'>
+    
+    <!-- drawfest使用CSS -->
     <link href="origin.css" rel="stylesheet" type="text/css">
-
-    <script type="text/javascript">
-        function getPosition(element) {
-            var x = 0;
-            var y = 0;
-
-            while (element) {
-                x += element.offsetLeft - element.scrollLeft + element.clientLeft;
-                y += element.offsetTop - element.scrollLeft + element.clientTop;
-                element = element.offsetParent;
-            }
-
-            return { x: x, y: y };
-        }
-    </script>
 
     <!-- 切換背景 -->
     <script src="change_bg.js" data-name="static-context"></script>
@@ -49,6 +36,14 @@
 
     <!-- product card使用CSS -->
     <link href="product_card使用.css" rel="stylesheet" type="text/css">
+
+    <!-- profile使用CSS -->
+    <link href="profile使用_1.css" rel="stylesheet" media="screen" />
+    <link href="profile使用_2.css" rel="stylesheet" media="screen" />
+    <link href="profile使用_3.css" rel="stylesheet" media="screen" />
+
+    <!-- profile 位置 的icon使用到fontawesome的icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -73,7 +68,6 @@
 
             <!--漸變背景設定-->
             <div class="main-visual">
-                <!-- <img class="main-visual-color" src="黑背景.png"> -->
                 <img class="main-visual-top" src="top_bg_lowerEarth.png">
                 <img class="main-visual-profile" src="profile_bg_dragon.png">
                 <img class="main-visual-gallery" src="gallery_bg_universe.png">
@@ -91,22 +85,59 @@
                     <h2 id="profile">
                         簡 介
                     </h2>
-                    <h3>
-                        About Reji
-                    </h3>
-                    <p>
-                        二〇〇一年出生於台灣台北市。今年二十歲。
-                        目前就讀於陽明交大資訊工程系三年級。</p><p>課業之餘從事貼圖製作、個人數位插畫繪製與實地速寫，尚未有接案經驗。</p>
-                        <p>插畫系列作《宇宙狂想》靜待復更。
-                    </p>
+                    <div class="site-content about-page">
+                        <div class="about-main">
+                            <div class="container-sm">
+                                <img class="circle" width="240" height="240" src="head_shot.png" />
+
+                                <div class="about-name title-font">
+                                    Reji
+                                </div>
+
+
+                                <div class="about-location fas fa-map-marker-alt">
+                                    新竹市, 臺灣
+                                </div>
+
+                                <p>
+                                    二〇〇一年出生於台灣台北市。今年二十歲。目前就讀於國立陽明交通大學資訊工程系三年級。曾分別至一電商與一問卷公司做寫程式的實習生。課業之餘從事貼圖製作、個人數位插畫繪製，與實地速寫，尚未有接案經驗。插畫系列作《宇宙狂想》靜待復更。
+                                </p>
+
+                                <div class="about-social">
+                                    <div class="so-list ik-style-solid ik-frame-circle ik-color-black">
+
+                                        <!-- 推特 icon -->
+                                        <div class="so-item">
+                                            <a class="so-link ik ik-artstation ik-s-artstation"
+                                                href="https://twitter.com/BitterRayKawaii">
+                                            </a>
+                                        </div>
+
+                                        <!-- FB icon -->
+                                        <div class="so-item">
+                                            <a class="so-link ik ik-artstation ik-s-linkedin"
+                                                href="https://www.facebook.com/sabishidesudesu">
+                                            </a>
+                                        </div>
+
+                                        <!-- IG icon -->
+                                        <div class="so-item">
+                                            <a class="so-link ik ik-artstation ik-s-twitter"
+                                                href="https://www.instagram.com/meur_sault__/">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-
                 <div class="main-content-subject">
-                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
                     <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">GALLERY</h2>
-                    <h2 id="gallery">宇 宙 狂 想</h2><br /><br /><br /><br /><br /><br />
+                    <h2 id="gallery">宇 宙 狂 想</h2>
+
+                    <br /><br /><br /><br /><br /><br />
 
                     <div class="sqs-block gallery-block sqs-block-gallery"
                         data-block-json="&#123;&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;methodOption&quot;:&quot;transient&quot;,&quot;existingGallery&quot;:&quot;51be55ade4b0656299f41416&quot;,&quot;transparentBackground&quot;:false,&quot;aspectRatio&quot;:null,&quot;auto-crop&quot;:false,&quot;autoplay&quot;:false,&quot;blockAnimation&quot;:&quot;none&quot;,&quot;collectionId&quot;:&quot;56a28e9da128e6ec293af2e1&quot;,&quot;controls&quot;:true,&quot;design&quot;:&quot;slideshow&quot;,&quot;existingGalleryId&quot;:&quot;51be55ade4b0656299f41416&quot;,&quot;meta-position&quot;:&quot;bottom&quot;,&quot;show-meta&quot;:false,&quot;show-meta-basic&quot;:true,&quot;show-meta-only-title&quot;:false,&quot;show-meta-only-description&quot;:false,&quot;show-meta-on-hover&quot;:false,&quot;square-thumbs&quot;:true,&quot;thumbnail-strip-height&quot;:80,&quot;thumbnail-strip-margin&quot;:20,&quot;thumbnails&quot;:true,&quot;vSize&quot;:null,&quot;transientGalleryId&quot;:&quot;56a28e9da128e6ec293af2e1&quot;,&quot;newWindow&quot;:false&#125;"
@@ -290,7 +321,7 @@
                             </td>
 
                             <td>
-                                    <!-- 產品三 -->
+                                <!-- 產品三 -->
                                 <div class="product_card">
                                     <img src="product-imgs\產品測試圖片3.jfif">
                                     <div class="product_card_container">
@@ -304,9 +335,7 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
 
-                    <table>
                         <tr>
                             <td>
                                 <!-- 產品四 -->
@@ -339,7 +368,7 @@
                             </td>
 
                             <td>
-                                    <!-- 產品六 -->
+                                <!-- 產品六 -->
                                 <div class="product_card">
                                     <img src="product-imgs\產品測試圖片3.jfif">
                                     <div class="product_card_container">
@@ -353,9 +382,7 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
 
-                    <table>
                         <tr>
                             <td>
                                 <!-- 產品七 -->
@@ -388,7 +415,7 @@
                             </td>
 
                             <td>
-                                    <!-- 產品九 -->
+                                <!-- 產品九 -->
                                 <div class="product_card">
                                     <img src="product-imgs\產品測試圖片3.jfif">
                                     <div class="product_card_container">

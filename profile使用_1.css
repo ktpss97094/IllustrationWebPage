@@ -1,0 +1,208 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+a {
+    background-color: transparent
+}
+
+img {
+    border-style: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+@supports (-ms-overflow-style: none) {
+}
+
+/*!
+ * Font Awesome Pro 5.6.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5"
+}
+
+/*!
+ * Font Awesome Pro 5.6.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.tylerklimek.com/assets/fa-regular-400-6ddacbeb8efc7defb9259173123a3beb.woff2) format("woff2"), url(https://www.tylerklimek.com/assets/fa-regular-400-a4c3b083be8c499c94a01b5f679dbdc3.woff) format("woff")
+}
+
+/*!
+ * Font Awesome Pro 5.6.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    src: url(https://www.tylerklimek.com/assets/fa-brands-400-8e96eea76625c6c0c070b49d6e892a63.woff2) format("woff2"), url(https://www.tylerklimek.com/assets/fa-brands-400-60698e7309e8a627603e3d948b954de9.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'ikons';
+    src: url(https://www.tylerklimek.com/assets/website/ikons-6c366aac02edf6acb3493799a7de6bbf.woff2) format("woff2"), url(https://www.tylerklimek.com/assets/website/ikons-8c84a9b63a6af8dc1f039a51c70b5d4d.woff) format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+.ik {
+    font-family: 'ikons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.ik-s-artstation {
+    /* twitter icon設定 */
+    content: url(twitter.svg)
+}
+
+.ik-s-twitter {
+    /* ig icon設定 */
+    content: url(ig.svg)
+}
+
+.ik-s-linkedin {
+    /* fb icon設定 */
+    content: url(fb.svg)
+}
+
+.ik {
+    display: block;
+    letter-spacing: 0;
+    min-width: 32px;
+    min-height: 32px;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: background .2s linear, color .2s linear, opacity .2s linear;
+    transition: background .2s linear, color .2s linear, opacity .2s linear
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .ik {
+        line-height: 32px
+    }
+}
+
+.ik-style-solid .ik {
+    border-radius: 0.3125rem
+}
+
+.ik-style-solid.ik-color-black .ik {
+    background: #000
+}
+
+.ik-style-solid.ik-frame-circle .ik {
+    border-radius: 50%
+}
+
+.ik-style-solid.ik-color-black .ik {
+    color: #fff
+}
+
+.ik-color-black.ik-style-solid .ik-artstation:hover {
+    background: #0016C0
+}
+
+.ik-color-black.ik-style-solid .ik-linkedin:hover {
+    background: #0016C0
+}
+
+.ik-color-black.ik-style-solid .ik-twitter:hover {
+    background: #0016C0
+}
+
+.ik-color-black.ik-style-solid .ik:hover {
+    color: #fff
+}
+
+@font-face {
+    font-family: 'icons';
+    src: url(https://www.tylerklimek.com/assets/website/icons-7cba7f6637d37c0353782e6b64c3d03f.woff2) format("woff2"), url(https://www.tylerklimek.com/assets/website/icons-948a99fbdcc6d3e2dfbbdf4bff55f5cf.woff) format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+.circle {
+    border-radius: 50%
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100vw;
+    flex: 1 1 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    max-width: 100%;
+    font-family: var(--font-family-primary)
+}
+
+:root {
+    --store-item-border-radius: 0.125rem;
+    --store-grid-gutter: 0.9375rem
+}
+
+:root {
+    --store-product-gutter: 1.25rem;
+    --store-product-color: var(--accent-color)
+}
