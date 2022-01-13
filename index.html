@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>專題</title>
 
-    <!-- Gallery使用的 -->
+    <!-- Gallery使用CSS -->
     <script crossorigin="anonymous"
         src="http://assets.squarespace.com/universal/scripts-compressed/moment-js-vendor-2c8245ba6fac7b95a166c-min.en-US.js"></script>
     <script crossorigin="anonymous"
@@ -22,24 +22,11 @@
     <link rel="stylesheet" type="text/css" href="Gallery使用CSS_1.css" />
     <!------------------->
 
-    <!--重要的CSS-->
+    <!-- google字型API -->
     <link href='https://fonts.googleapis.com/css?family=Noto Serif TC' rel='stylesheet'>
+    
+    <!-- drawfest使用CSS -->
     <link href="origin.css" rel="stylesheet" type="text/css">
-
-    <script type="text/javascript">
-        function getPosition(element) {
-            var x = 0;
-            var y = 0;
-
-            while (element) {
-                x += element.offsetLeft - element.scrollLeft + element.clientLeft;
-                y += element.offsetTop - element.scrollLeft + element.clientTop;
-                element = element.offsetParent;
-            }
-
-            return { x: x, y: y };
-        }
-    </script>
 
     <!-- 切換背景 -->
     <script src="change_bg.js" data-name="static-context"></script>
@@ -54,6 +41,9 @@
     <link href="profile使用_1.css" rel="stylesheet" media="screen" />
     <link href="profile使用_2.css" rel="stylesheet" media="screen" />
     <link href="profile使用_3.css" rel="stylesheet" media="screen" />
+
+    <!-- profile 位置 的icon使用到fontawesome的icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -96,70 +86,58 @@
                         簡 介
                     </h2>
 
-                    <p>
-                        二〇〇一年出生於台灣台北市。今年二十歲。目前就讀於國立陽明交通大學資訊工程系三年級。曾分別至一電商與一問卷公司做寫程式的實習生。課業之餘從事貼圖製作、個人數位插畫繪製，與實地速寫，尚未有接案經驗。插畫系列作《宇宙狂想》靜待復更。
-                    </p>
-
                     <div class="site-content about-page">
                         <div class="about-main">
                             <div class="container-sm">
-                                <img class="circle" width="240" height="240"
-                                    src="https://cdna.artstation.com/p/users/avatars/000/386/790/large/3beaa58404917b8d43410ed3cd34b333.jpg?1641471925" />
+                                <img class="circle" width="240" height="240" src="head_shot.png" />
 
                                 <div class="about-name title-font">
                                     Reji
                                 </div>
 
-                                <div class="about-location">
+
+                                <div class="about-location fas fa-map-marker-alt">
                                     新竹市, 臺灣
                                 </div>
 
+                                <p>
+                                    二〇〇一年出生於台灣台北市。今年二十歲。目前就讀於國立陽明交通大學資訊工程系三年級。曾分別至一電商與一問卷公司做寫程式的實習生。課業之餘從事貼圖製作、個人數位插畫繪製，與實地速寫，尚未有接案經驗。插畫系列作《宇宙狂想》靜待復更。
+                                </p>
+
                                 <div class="about-social">
                                     <div class="so-list ik-style-solid ik-frame-circle ik-color-black">
+
+                                        <!-- 推特 icon -->
                                         <div class="so-item">
                                             <a class="so-link ik ik-artstation ik-s-artstation"
-                                                href="https://www.artstation.com/tylerklimek">
+                                                href="https://twitter.com/BitterRayKawaii">
                                             </a>
                                         </div>
 
+                                        <!-- FB icon -->
                                         <div class="so-item">
-                                            <a class="so-link ik ik-mail ik-s-mail"
-                                                href="mailto:tylerklimekartist@gmail.com">
+                                            <a class="so-link ik ik-artstation ik-s-linkedin"
+                                                href="https://www.facebook.com/sabishidesudesu">
                                             </a>
                                         </div>
 
+                                        <!-- IG icon -->
                                         <div class="so-item">
-                                            <a class="so-link ik ik-web ik-s-web" target="_blank"
-                                                href="http://www.tylerklimek.com">
-                                            </a>
-                                        </div>
-
-                                        <div class="so-item">
-                                            <a class="so-link ik ik-linkedin ik-s-linkedin" target="_blank"
-                                                href="https://www.linkedin.com/in/tylerklimek">
-
-                                            </a>
-                                        </div>
-                                        <div class="so-item">
-                                            <a class="so-link ik ik-twitter ik-s-twitter" target="_blank"
-                                                href="https://twitter.com/TolerLive">
-
+                                            <a class="so-link ik ik-artstation ik-s-twitter"
+                                                href="https://www.instagram.com/meur_sault__/">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
 
                 <div class="main-content-subject">
                     <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">GALLERY</h2>
                     <h2 id="gallery">宇 宙 狂 想</h2>
-                    
+
                     <br /><br /><br /><br /><br /><br />
 
                     <div class="sqs-block gallery-block sqs-block-gallery"
@@ -345,9 +323,7 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
 
-                    <table>
                         <tr>
                             <td>
                                 <!-- 產品四 -->
@@ -394,9 +370,7 @@
                                 </div>
                             </td>
                         </tr>
-                    </table>
 
-                    <table>
                         <tr>
                             <td>
                                 <!-- 產品七 -->

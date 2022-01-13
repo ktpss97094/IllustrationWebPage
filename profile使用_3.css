@@ -36,46 +36,14 @@
 }
 
 /* Custom options via Theme Customizer */
-.site-title a {
-    font-weight: 600;
-    letter-spacing: 1px;
-}
 
-@media (min-width: 70em) {
-    .site-title a {
-        font-size: 26px;
-    }
-}
-
-.site-title .site-subtitle {
+body, p {
     font-weight: 300;
     letter-spacing: 1px;
 }
 
 @media (min-width: 70em) {
-    .site-title .site-subtitle {
-        font-size: 16px;
-    }
-}
-
-body, p, .project-page, .project-text {
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-@media (min-width: 70em) {
-    body, p, .project-page, .project-text {
+    body, p {
         font-size: 13px;
-    }
-}
-
-.site-footer .copy {
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-@media (min-width: 70em) {
-    .site-footer .copy {
-        font-size: 12px;
     }
 }
