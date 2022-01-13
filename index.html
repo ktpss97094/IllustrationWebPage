@@ -24,7 +24,7 @@
 
     <!-- google字型API -->
     <link href='https://fonts.googleapis.com/css?family=Noto Serif TC' rel='stylesheet'>
-    
+
     <!-- drawfest使用CSS -->
     <link href="origin.css" rel="stylesheet" type="text/css">
 
@@ -43,387 +43,400 @@
     <link href="profile使用_3.css" rel="stylesheet" media="screen" />
 
     <!-- profile 位置 的icon使用到fontawesome的icon -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
+    <!-- 索引選單 -->
     <nav class="header_nav">
-        <div class="header_nav_wrap">
-            <ul class="header_nav_list">
-                <li class="current"><a href="#top">TOP</a></li>
+        <ul class="header_nav_list">
+            
+            <li class="current">
+                <a href="#top">
+                    TOP
+                </a>
+            </li>
 
-                <li><a href="javascript:;" onclick="document.getElementById('profile').scrollIntoView()">PROFILE</a>
-                </li>
-                <li><a href="javascript:;" onclick="document.getElementById('gallery').scrollIntoView()">GALLERY</a>
-                </li>
-                <li><a href="javascript:;" onclick="document.getElementById('product').scrollIntoView()">PRODUCT</a>
-                </li>
+            <li>
+                <a href="javascript:;" onclick="document.getElementById('profile').scrollIntoView()">
+                    PROFILE
+                </a>
+            </li>
 
-            </ul>
-        </div>
+            <li>
+                <a href="javascript:;" onclick="document.getElementById('gallery').scrollIntoView()">
+                    GALLERY
+                </a>
+            </li>
+
+            <li>
+                <a href="javascript:;" onclick="document.getElementById('product').scrollIntoView()">
+                    PRODUCT
+                </a>
+            </li>
+        </ul>
     </nav>
 
-    <div class="wrapper">
-        <div class="main">
+    <!-- 漸變背景設定 -->
+    <div class="main-visual">
+        <img class="main-visual-top" src="top_bg_lowerEarth.png">
+        <img class="main-visual-profile" src="profile_bg_dragon.png">
+        <img class="main-visual-gallery" src="gallery_bg_universe.png">
+        <img class="main-visual-product" src="product_bg_universe.png">
+    </div>
 
-            <!--漸變背景設定-->
-            <div class="main-visual">
-                <img class="main-visual-top" src="top_bg_lowerEarth.png">
-                <img class="main-visual-profile" src="profile_bg_dragon.png">
-                <img class="main-visual-gallery" src="gallery_bg_universe.png">
-                <img class="main-visual-product" src="product_bg_universe.png">
-            </div>
+    <div class="main-content">
 
-            <div class="main-content">
+        <img src="logo.svg" style="position:relative;left:1070px;bottom:150px;width:10%;" />
 
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-                <div class="main-content-subject">
-                    <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">
-                        Profile
-                    </h2>
-                    <h2 id="profile">
-                        簡 介
-                    </h2>
+        <div class="main-content-subject">
+            <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">
+                Profile
+            </h2>
+            <h2 id="profile">
+                簡 介
+            </h2>
 
-                    <div class="site-content about-page">
-                        <div class="about-main">
-                            <div class="container-sm">
-                                <img class="circle" width="240" height="240" src="head_shot.png" />
+            <div class="site-content about-page">
+                <div class="about-main">
+                    <div class="container-sm">
+                        <img class="circle" width="240" height="240" src="head_shot.png" />
 
-                                <div class="about-name title-font">
-                                    Reji
+                        <div class="about-name title-font">
+                            Reji
+                        </div>
+
+
+                        <div class="about-location fas fa-map-marker-alt">
+                            新竹市, 臺灣
+                        </div>
+
+                        <p>
+                            二〇〇一年出生於台灣台北市。今年二十歲。目前就讀於國立陽明交通大學資訊工程系三年級。曾分別至一電商與一問卷公司做寫程式的實習生。課業之餘從事貼圖製作、個人數位插畫繪製，與實地速寫，尚未有接案經驗。插畫系列作《宇宙狂想》靜待復更。
+                        </p>
+
+                        <div class="about-social">
+                            <div class="so-list ik-style-solid ik-frame-circle ik-color-black">
+
+                                <!-- 推特 icon -->
+                                <div class="so-item">
+                                    <a class="so-link ik ik-artstation ik-s-artstation"
+                                        href="https://twitter.com/BitterRayKawaii">
+                                    </a>
                                 </div>
 
-
-                                <div class="about-location fas fa-map-marker-alt">
-                                    新竹市, 臺灣
+                                <!-- FB icon -->
+                                <div class="so-item">
+                                    <a class="so-link ik ik-artstation ik-s-linkedin"
+                                        href="https://www.facebook.com/sabishidesudesu">
+                                    </a>
                                 </div>
 
-                                <p>
-                                    二〇〇一年出生於台灣台北市。今年二十歲。目前就讀於國立陽明交通大學資訊工程系三年級。曾分別至一電商與一問卷公司做寫程式的實習生。課業之餘從事貼圖製作、個人數位插畫繪製，與實地速寫，尚未有接案經驗。插畫系列作《宇宙狂想》靜待復更。
-                                </p>
-
-                                <div class="about-social">
-                                    <div class="so-list ik-style-solid ik-frame-circle ik-color-black">
-
-                                        <!-- 推特 icon -->
-                                        <div class="so-item">
-                                            <a class="so-link ik ik-artstation ik-s-artstation"
-                                                href="https://twitter.com/BitterRayKawaii">
-                                            </a>
-                                        </div>
-
-                                        <!-- FB icon -->
-                                        <div class="so-item">
-                                            <a class="so-link ik ik-artstation ik-s-linkedin"
-                                                href="https://www.facebook.com/sabishidesudesu">
-                                            </a>
-                                        </div>
-
-                                        <!-- IG icon -->
-                                        <div class="so-item">
-                                            <a class="so-link ik ik-artstation ik-s-twitter"
-                                                href="https://www.instagram.com/meur_sault__/">
-                                            </a>
-                                        </div>
-                                    </div>
+                                <!-- IG icon -->
+                                <div class="so-item">
+                                    <a class="so-link ik ik-artstation ik-s-twitter"
+                                        href="https://www.instagram.com/meur_sault__/">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="main-content-subject">
-                    <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">GALLERY</h2>
-                    <h2 id="gallery">宇 宙 狂 想</h2>
-
-                    <br /><br /><br /><br /><br /><br />
-
-                    <div class="sqs-block gallery-block sqs-block-gallery"
-                        data-block-json="&#123;&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;methodOption&quot;:&quot;transient&quot;,&quot;existingGallery&quot;:&quot;51be55ade4b0656299f41416&quot;,&quot;transparentBackground&quot;:false,&quot;aspectRatio&quot;:null,&quot;auto-crop&quot;:false,&quot;autoplay&quot;:false,&quot;blockAnimation&quot;:&quot;none&quot;,&quot;collectionId&quot;:&quot;56a28e9da128e6ec293af2e1&quot;,&quot;controls&quot;:true,&quot;design&quot;:&quot;slideshow&quot;,&quot;existingGalleryId&quot;:&quot;51be55ade4b0656299f41416&quot;,&quot;meta-position&quot;:&quot;bottom&quot;,&quot;show-meta&quot;:false,&quot;show-meta-basic&quot;:true,&quot;show-meta-only-title&quot;:false,&quot;show-meta-only-description&quot;:false,&quot;show-meta-on-hover&quot;:false,&quot;square-thumbs&quot;:true,&quot;thumbnail-strip-height&quot;:80,&quot;thumbnail-strip-margin&quot;:20,&quot;thumbnails&quot;:true,&quot;vSize&quot;:null,&quot;transientGalleryId&quot;:&quot;56a28e9da128e6ec293af2e1&quot;,&quot;newWindow&quot;:false&#125;"
-                        data-block-type="8" id="block-yui_3_17_2_1_1408743038340_23704">
-                        <div class="sqs-block-content">
-                            <div
-                                class="sqs-gallery-container sqs-gallery-block-slideshow sqs-gallery-has-controls sqs-gallery-has-thumbnails sqs-gallery-block-show-meta block-animation-none clear">
-
-                                <div class="sqs-gallery">
-
-                                    <!-- 第一張圖 -->
-                                    <div>
-                                        <img data-src="gallery-imgs/1_M57.png">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊
-                                            </h3>
-                                        </div>
-                                    </div>
-
-                                    <!-- 第二張圖 -->
-                                    <div>
-                                        <img data-src="gallery-imgs/2_M1.png">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是一隻無尾熊這是一隻無尾熊這是一隻無尾熊這是一隻無尾熊這是一隻無尾熊
-                                            </h3>
-                                        </div>
-                                    </div>
-
-                                    <!-- 第三張圖 -->
-                                    <div>
-                                        <img data-src="gallery-imgs/3_Arp273.png">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是一顆芒果這是一顆芒果這是一顆芒果這是一顆芒果這是一顆芒果
-                                            </h3>
-                                        </div>
-                                    </div>
-
-                                    <!-- 第四張圖 -->
-                                    <div>
-                                        <img data-src="gallery-imgs/4_NGC2237.png">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲
-                                            </h3>
-                                        </div>
-                                    </div>
-
-                                    <!-- 第五張圖 -->
-                                    <div>
-                                        <img data-src="測試圖片5.png">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是一個波浪這是一個波浪這是一個波浪這是一個波浪這是一個波浪這是一個波浪
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <!-- 第六張圖 -->
-                                    <div>
-                                        <img data-src="測試圖片6.png">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是一張測試圖片這是一張測試圖片這是一張測試圖片這是一張測試圖片這是一張測試圖片這是一張測試圖片
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <!-- 第七張圖 -->
-
-                                    <div>
-                                        <img data-src="測試圖片7.png">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是一隻金魚這是一隻金魚這是一隻金魚這是一隻金魚這是一隻金魚這是一隻金魚
-                                            </h3>
-                                        </div>
-                                    </div>
-
-                                    <!-- 第八張圖 -->
-                                    <div>
-                                        <img data-src="測試圖片8.png">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是一隻袋鼠這是一隻袋鼠這是一隻袋鼠這是一隻袋鼠這是一隻袋鼠這是一隻袋鼠
-                                            </h3>
-                                        </div>
-                                    </div>
-
-                                    <!-- 第九張圖 -->
-                                    <div>
-                                        <img data-src="測試圖片9.png">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是豆子這是豆子這是豆子這是豆子這是豆子
-                                            </h3>
-                                        </div>
-                                    </div>
-
-                                    <!-- 第十張圖 -->
-                                    <div>
-                                        <img data-src="測試圖片10.png" data-image-dimensions="1600x1200">
-                                        <div id="gallery_text_box">
-                                            <h3>
-                                                這是一束花這是一束花這是一束花這是一束花這是一束花
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 縮圖 -->
-                            <div class="sqs-gallery-thumbnails">
-                                <img data-src="gallery-imgs/1_M57.png">
-                                <img data-src="gallery-imgs/2_M1.png">
-                                <img data-src="gallery-imgs/3_Arp273.png">
-                                <img data-src="gallery-imgs/4_NGC2237.png">
-                                <img data-src="測試圖片5.png">
-                                <img data-src="測試圖片6.png">
-                                <img data-src="測試圖片7.png">
-                                <img data-src="測試圖片8.png">
-                                <img data-src="測試圖片9.png">
-                                <img data-src="測試圖片10.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="main-content-subject">
-
-                    <br /><br /><br />
-
-                    <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">PRODUCT</h2>
-                    <h2 id="product">企 劃 中 商 品</h2>
-
-                    <br /><br /><br /><br /><br />
-
-                    <table>
-                        <tr>
-                            <td>
-                                <!-- 產品一 -->
-                                <div class="product_card">
-                                    <img src="product-imgs\outfit.png">
-                                    <div class="product_card_container">
-                                        <h4>
-                                            限量帽T
-                                        </h4>
-                                        <p>
-                                            NTD $9999999
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td>
-                                <!-- 產品二 -->
-                                <div class="product_card">
-                                    <img src="product-imgs\產品測試圖片2.jfif">
-                                    <div class="product_card_container">
-                                        <h4>
-                                            捕夢網
-                                        </h4>
-                                        <p>
-                                            NTD $30
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td>
-                                <!-- 產品三 -->
-                                <div class="product_card">
-                                    <img src="product-imgs\產品測試圖片3.jfif">
-                                    <div class="product_card_container">
-                                        <h4>
-                                            Raid
-                                        </h4>
-                                        <p>
-                                            NTD $3000
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <!-- 產品四 -->
-                                <div class="product_card">
-                                    <img src="product-imgs\outfit.png">
-                                    <div class="product_card_container">
-                                        <h4>
-                                            限量帽T
-                                        </h4>
-                                        <p>
-                                            NTD $9999999
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td>
-                                <!-- 產品五 -->
-                                <div class="product_card">
-                                    <img src="product-imgs\產品測試圖片2.jfif">
-                                    <div class="product_card_container">
-                                        <h4>
-                                            捕夢網
-                                        </h4>
-                                        <p>
-                                            NTD $30
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td>
-                                <!-- 產品六 -->
-                                <div class="product_card">
-                                    <img src="product-imgs\產品測試圖片3.jfif">
-                                    <div class="product_card_container">
-                                        <h4>
-                                            Raid
-                                        </h4>
-                                        <p>
-                                            NTD $3000
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <!-- 產品七 -->
-                                <div class="product_card">
-                                    <img src="product-imgs\outfit.png">
-                                    <div class="product_card_container">
-                                        <h4>
-                                            限量帽T
-                                        </h4>
-                                        <p>
-                                            NTD $9999999
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td>
-                                <!-- 產品八 -->
-                                <div class="product_card">
-                                    <img src="product-imgs\產品測試圖片2.jfif">
-                                    <div class="product_card_container">
-                                        <h4>
-                                            捕夢網
-                                        </h4>
-                                        <p>
-                                            NTD $30
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td>
-                                <!-- 產品九 -->
-                                <div class="product_card">
-                                    <img src="product-imgs\產品測試圖片3.jfif">
-                                    <div class="product_card_container">
-                                        <h4>
-                                            Raid
-                                        </h4>
-                                        <p>
-                                            NTD $3000
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-
-                    <br /><br /><br /><br /><br />
                 </div>
             </div>
         </div>
+
+        <div class="main-content-subject">
+            <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">GALLERY</h2>
+            <h2 id="gallery">宇 宙 狂 想</h2>
+
+            <br /><br /><br /><br /><br /><br />
+
+            <div class="sqs-block gallery-block sqs-block-gallery"
+                data-block-json="&#123;&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;methodOption&quot;:&quot;transient&quot;,&quot;existingGallery&quot;:&quot;51be55ade4b0656299f41416&quot;,&quot;transparentBackground&quot;:false,&quot;aspectRatio&quot;:null,&quot;auto-crop&quot;:false,&quot;autoplay&quot;:false,&quot;blockAnimation&quot;:&quot;none&quot;,&quot;collectionId&quot;:&quot;56a28e9da128e6ec293af2e1&quot;,&quot;controls&quot;:true,&quot;design&quot;:&quot;slideshow&quot;,&quot;existingGalleryId&quot;:&quot;51be55ade4b0656299f41416&quot;,&quot;meta-position&quot;:&quot;bottom&quot;,&quot;show-meta&quot;:false,&quot;show-meta-basic&quot;:true,&quot;show-meta-only-title&quot;:false,&quot;show-meta-only-description&quot;:false,&quot;show-meta-on-hover&quot;:false,&quot;square-thumbs&quot;:true,&quot;thumbnail-strip-height&quot;:80,&quot;thumbnail-strip-margin&quot;:20,&quot;thumbnails&quot;:true,&quot;vSize&quot;:null,&quot;transientGalleryId&quot;:&quot;56a28e9da128e6ec293af2e1&quot;,&quot;newWindow&quot;:false&#125;"
+                data-block-type="8" id="block-yui_3_17_2_1_1408743038340_23704">
+                <div class="sqs-block-content">
+                    <div
+                        class="sqs-gallery-container sqs-gallery-block-slideshow sqs-gallery-has-controls sqs-gallery-has-thumbnails sqs-gallery-block-show-meta block-animation-none clear">
+
+                        <div class="sqs-gallery">
+
+                            <!-- 第一張圖 -->
+                            <div>
+                                <img data-src="gallery-imgs/1_M57.png">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊這是一隻熊
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- 第二張圖 -->
+                            <div>
+                                <img data-src="gallery-imgs/2_M1.png">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是一隻無尾熊這是一隻無尾熊這是一隻無尾熊這是一隻無尾熊這是一隻無尾熊
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- 第三張圖 -->
+                            <div>
+                                <img data-src="gallery-imgs/3_Arp273.png">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是一顆芒果這是一顆芒果這是一顆芒果這是一顆芒果這是一顆芒果
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- 第四張圖 -->
+                            <div>
+                                <img data-src="gallery-imgs/4_NGC2237.png">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲這是一團雷雨雲
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- 第五張圖 -->
+                            <div>
+                                <img data-src="測試圖片5.png">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是一個波浪這是一個波浪這是一個波浪這是一個波浪這是一個波浪這是一個波浪
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- 第六張圖 -->
+                            <div>
+                                <img data-src="測試圖片6.png">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是一張測試圖片這是一張測試圖片這是一張測試圖片這是一張測試圖片這是一張測試圖片這是一張測試圖片
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- 第七張圖 -->
+
+                            <div>
+                                <img data-src="測試圖片7.png">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是一隻金魚這是一隻金魚這是一隻金魚這是一隻金魚這是一隻金魚這是一隻金魚
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- 第八張圖 -->
+                            <div>
+                                <img data-src="測試圖片8.png">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是一隻袋鼠這是一隻袋鼠這是一隻袋鼠這是一隻袋鼠這是一隻袋鼠這是一隻袋鼠
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- 第九張圖 -->
+                            <div>
+                                <img data-src="測試圖片9.png">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是豆子這是豆子這是豆子這是豆子這是豆子
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- 第十張圖 -->
+                            <div>
+                                <img data-src="測試圖片10.png" data-image-dimensions="1600x1200">
+                                <div id="gallery_text_box">
+                                    <h3>
+                                        這是一束花這是一束花這是一束花這是一束花這是一束花
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 縮圖 -->
+                    <div class="sqs-gallery-thumbnails">
+                        <img data-src="gallery-imgs/1_M57.png">
+                        <img data-src="gallery-imgs/2_M1.png">
+                        <img data-src="gallery-imgs/3_Arp273.png">
+                        <img data-src="gallery-imgs/4_NGC2237.png">
+                        <img data-src="測試圖片5.png">
+                        <img data-src="測試圖片6.png">
+                        <img data-src="測試圖片7.png">
+                        <img data-src="測試圖片8.png">
+                        <img data-src="測試圖片9.png">
+                        <img data-src="測試圖片10.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-subject">
+
+            <br /><br /><br />
+
+            <h2 style="font-size: 75px;position: relative;top:20px;right:7px;opacity: 0.5;">PRODUCT</h2>
+            <h2 id="product">企 劃 中 商 品</h2>
+
+            <br /><br /><br /><br /><br />
+
+            <table>
+                <tr>
+                    <td>
+                        <!-- 產品一 -->
+                        <div class="product_card">
+                            <img src="product-imgs\outfit.png">
+                            <div class="product_card_container">
+                                <h4>
+                                    限量帽T
+                                </h4>
+                                <p>
+                                    NTD $9999999
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <!-- 產品二 -->
+                        <div class="product_card">
+                            <img src="product-imgs\產品測試圖片2.jfif">
+                            <div class="product_card_container">
+                                <h4>
+                                    捕夢網
+                                </h4>
+                                <p>
+                                    NTD $30
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <!-- 產品三 -->
+                        <div class="product_card">
+                            <img src="product-imgs\產品測試圖片3.jfif">
+                            <div class="product_card_container">
+                                <h4>
+                                    Raid
+                                </h4>
+                                <p>
+                                    NTD $3000
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <!-- 產品四 -->
+                        <div class="product_card">
+                            <img src="product-imgs\outfit.png">
+                            <div class="product_card_container">
+                                <h4>
+                                    限量帽T
+                                </h4>
+                                <p>
+                                    NTD $9999999
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <!-- 產品五 -->
+                        <div class="product_card">
+                            <img src="product-imgs\產品測試圖片2.jfif">
+                            <div class="product_card_container">
+                                <h4>
+                                    捕夢網
+                                </h4>
+                                <p>
+                                    NTD $30
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <!-- 產品六 -->
+                        <div class="product_card">
+                            <img src="product-imgs\產品測試圖片3.jfif">
+                            <div class="product_card_container">
+                                <h4>
+                                    Raid
+                                </h4>
+                                <p>
+                                    NTD $3000
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <!-- 產品七 -->
+                        <div class="product_card">
+                            <img src="product-imgs\outfit.png">
+                            <div class="product_card_container">
+                                <h4>
+                                    限量帽T
+                                </h4>
+                                <p>
+                                    NTD $9999999
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <!-- 產品八 -->
+                        <div class="product_card">
+                            <img src="product-imgs\產品測試圖片2.jfif">
+                            <div class="product_card_container">
+                                <h4>
+                                    捕夢網
+                                </h4>
+                                <p>
+                                    NTD $30
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <!-- 產品九 -->
+                        <div class="product_card">
+                            <img src="product-imgs\產品測試圖片3.jfif">
+                            <div class="product_card_container">
+                                <h4>
+                                    Raid
+                                </h4>
+                                <p>
+                                    NTD $3000
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <br /><br /><br /><br /><br />
+        </div>
     </div>
+
 </body>
 
 </html>
