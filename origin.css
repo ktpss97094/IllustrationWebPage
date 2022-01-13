@@ -102,11 +102,13 @@ img.main-visual-profile {
     position: relative;
     width: 300px;
     height: 600px;
+
     background: black;
     /* margin-left:830px;
     margin-top:-550px; */
     bottom: 640px;
     left: 830px;
+    overflow: scroll;
 }
 
 #gallery_text_box h3 {
