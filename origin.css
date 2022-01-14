@@ -100,15 +100,15 @@ img.main-visual-profile {
 
 #gallery_text_box {
     position: relative;
-    width: 300px;
-    height: 600px;
+    width: 500px;
+    height: 580px;
 
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(255, 0, 0, 0.5); */
     /* margin-left:830px;
     margin-top:-550px; */
-    bottom: 640px;
+    bottom: 598px;
     left: 830px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 #gallery_text_box h3 {
@@ -153,4 +153,23 @@ img.main-visual-profile {
     line-height: 120%;
     color: #FFFFFF;
     margin-top: 16px;
+}
+
+.translucent_subtitle{
+    margin-top: 40px; 
+    font-size: 75px;
+    position: relative;
+    top:20px;
+    right:200px;
+    opacity: 0.5;
+}
+
+.opaque_subtitle{
+    position: relative;
+    right:200px;
+}
+
+.main_paragraph{
+    position: relative;
+    right:200px;
 }
