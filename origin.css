@@ -103,7 +103,7 @@ img.main-visual-profile {
     width: 300px;
     height: 600px;
 
-    background: black;
+    background: rgba(0, 0, 0, 0.5);
     /* margin-left:830px;
     margin-top:-550px; */
     bottom: 640px;
@@ -120,6 +120,10 @@ img.main-visual-profile {
     color: var(--accent-color);
     color: white;
     opacity: 1;
+}
+
+#gallery_text_box p.gallery-text { /*這樣有選到 「class="gallery-text" 的 tag p」嗎？*/
+    color: rgb(194, 194, 194) ;
 }
 
 .main-content-subject h3 {
@@ -146,7 +150,7 @@ img.main-visual-profile {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 120%;
     color: #FFFFFF;
     margin-top: 16px;
 }
