@@ -111,6 +111,14 @@ img.main-visual-profile {
     overflow-y: scroll;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#gallery_text_box::-webkit-scrollbar{
+    display: none;
+}
+
 #gallery_text_box h3 {
     font-family: '思源宋體 TW', 'Noto Serif TC';
     font-style: normal;
